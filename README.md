@@ -37,6 +37,8 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 
 **11 Oct in one line:** network unique accepted, 07:30-12:33Z (303 minutes, halted early by stp: taking a break, other things on the agenda), about 51.5 million unique transactions; peak complete minute **3,583.1 tx/s** at 11:28Z, mean **2,833.1**, median **3,107.1** over 171 strict single minutes; includes about 56 tx/s base load. Build's results: pending. Source: [logs/bot/SUMMARY.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md), [logs/COMBINED.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/COMBINED.md).
 
+**Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
+
 ## Map
 
 ```
@@ -62,7 +64,7 @@ tn-master/
 | [history/TIMELINE.md](history/TIMELINE.md) | One line per day |
 | [history/storms/](history/storms/README.md) | One page per storm |
 | [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md) | Kaspa Pulse: every input and what we changed |
-| [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility |
+| [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility (incl. the [mint-rush plan](https://github.com/STP-KAS/tn10-storm-plan-mint-rush)) |
 | [repos/RENAME-LOG.md](repos/RENAME-LOG.md) | The 11 Oct 2026 renames |
 | [docs/LESSONS.md](docs/LESSONS.md) · [docs/OPEN-QUESTIONS.md](docs/OPEN-QUESTIONS.md) | Operations lessons; what still needs testing |
 

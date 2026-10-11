@@ -44,6 +44,7 @@ Renamed on 11 Oct 2026 to `tn10-storm-YYYY-MM-DD` (+ suffix). Old names redirect
 | 37 | [tn10-storm-2026-10-10-plan](https://github.com/STP-KAS/tn10-storm-2026-10-10-plan) | `tn10-private` | 2026-10-10 | COMPANION | public | 10 Oct plan, replaced the same day |  |
 | 38 | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) | `tn-storm-11-10` | 2026-10-11 | RUN | public | Flat-out run, 11 Oct |  |
 | 39 | [tn10-storm-2026-10-11-draft](https://github.com/STP-KAS/tn10-storm-2026-10-11-draft) | `tn10-run-2026-10-11` | 2026-10-11 | DUP (draft) | public, archived | Draft for 11 Oct, never run | archived |
+| 40 | [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush) | — | no date yet | PLAN | public | KCC-20 mint rush under storm load, auto-fee vs fixed-fee minters (plan, not a run) | renamed to `tn10-storm-YYYY-MM-DD` once a run date is set |
 
 ## Public clean copies (current files only, redacted; created 11 Oct 2026)
 

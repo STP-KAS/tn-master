@@ -44,6 +44,15 @@ All of his inputs came by X DM. Below: every input, where it is recorded, and wh
 - [history/MASTER.md](../history/MASTER.md): his night count of 9-10 Oct is the reference for that run.
 - [kaspa-pulse/](kaspa-pulse/2026-10-09-night/README.md): his files, published with his yes.
 
+## 11 Oct 2026: lines about him
+
+Published with stp's go-ahead (11 Oct, 15:22 CEST). Also on the [11 Oct storm page](../history/storms/2026-10-11.md#kaspa-pulse-and-11-oct).
+
+1. A live mirror of his counting method (accepted in blocks, two independent nodes, per UTC minute by accepting chain block time) ran on the bot side from 10:48Z. Highest minute: 11:28Z at 3,645.9 tx/s on both nodes. Median 3,209.4 tx/s (public node, 101 minutes) and 3,225.3 tx/s (n2, 87 minutes), 0 disagreements between the nodes. Data: [pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv).
+2. Every network count includes TN10 base load of about 56 tx/s (figure from Kaspa Pulse).
+3. His outside count for 07:30-12:33Z: **pending** (input 18), to be set next to our chain-count median 3,107.1 and peak 3,583.1 tx/s.
+4. The chain count right after END, before pruning, is his fix. It is what made the 11 Oct headline possible despite n2's freeze 11:08-11:25Z.
+
 ## His message, 10 Oct 2026
 
 From stp's screenshot, quoted as given. Ellipses mark text not on the screen.

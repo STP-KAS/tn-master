@@ -6,6 +6,14 @@
 
 A **storm** is a load test on Kaspa **Testnet-10** (TN10). Many sign-and-send processes (**senders**) push simple transactions at nodes for hours, while loggers record what was sent, what nodes accepted, and the state of the nodes and the machine. Afterwards we count, from the chain, what the network really accepted. Two sides ran most storms from October: **the bot** (Grok Bot's box, own node n2) and **Build** (Grok Build on stp's desk, own node). Wording (Kaspa Pulse, 7 Oct): **senders** sign and send, the **runner** is the setup, **bot** is reserved for the operator.
 
+## Goal
+
+Give developers, core and contributors a long window on TN10 to operate under **real congestion**, against an AI/LLM sender that itself pays high fees. Dapps and other infrastructure then get tested against how the network really behaves, not against made-up numbers, so they are closer to ready for the day this happens on mainnet.
+
+**An option, not a rule.** If your dapp has to keep working during congestion, watch the network live and raise your fee automatically when it gets busy, with a **hard cap** so you cannot be drained. Spam then has to compete with you in the same mempool for as long as you keep raising, which makes crowding you out more expensive. Whether and how far to do this is **each dapp builder's call** ([ADVICE-TO-DEVELOPERS.md](ADVICE-TO-DEVELOPERS.md), item 1).
+
+**What this does not prove.** On TN10 it shows the mechanics only: tKAS has no value, so it says nothing about attack cost. On mainnet, auto-raise is readiness and cost-raising for critical flows, not a guarantee that attacks become too expensive. A richer attacker can still outbid, and if everyone raises together, fees spiral and honest users get priced out.
+
 ## Why
 
 - To see where TN10 flattens: how many transactions per second the network really accepts, and what breaks first (nodes, mempools, indexers, disks, fees).

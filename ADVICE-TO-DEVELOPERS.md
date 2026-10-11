@@ -2,6 +2,8 @@
 
 # Advice to developers
 
+These storms exist so builders can rehearse under real TN10 congestion against a high-fee AI/LLM sender: practice for mainnet, not a claim that auto-raising fees stops attackers. Live fee auto-raise (with a hard cap) is an option for dapps that must keep working during congestion; each dapp builder decides. On TN10 this proves mechanics only, not attack cost. See the [goal](WHAT-WHY-HOW.md#goal).
+
 Testnet-10 only. Each item says what we saw and where. Mainnet: label **B** (same node code, not tested on mainnet) unless stated otherwise.
 
 1. **For critical infrastructure that needs steady flows, watch the network live and raise your fee automatically when congestion rises.** Read the node's fee estimate and mempool size every few seconds. When they jump, raise your feerate. If a transaction is not accepted within about 10 s, rebuild it at a higher fee. Put a cap on it so a flood cannot drain you.

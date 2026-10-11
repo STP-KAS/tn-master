@@ -39,10 +39,10 @@ Renamed on 11 Oct 2026 to `tn10-storm-YYYY-MM-DD` (+ suffix). Old names redirect
 | 32 | [tn10-storm-2026-10-08](https://github.com/STP-KAS/tn10-storm-2026-10-08) | `grok-bot-build-combo` | 2026-10-08 | RUN | public | Bot and Build combo hub; 8 Oct checkout |  |
 | 33 | [tn10-storm-2026-10-09](https://github.com/STP-KAS/tn10-storm-2026-10-09) | `tn10-locus` | 2026-10-09 | RUN | public | keel day, Friday night storm 9-10 Oct, take 2 |  |
 | 34 | [tn10-storm-2026-10-09-challenge](https://github.com/STP-KAS/tn10-storm-2026-10-09-challenge) | `tn10-storm-build-bot-challenge` | 2026-10-09 | DUP (empty) | public, archived | Challenge page, never used | archived |
-| 35 | [tn10-storm-2026-10-10](https://github.com/STP-KAS/tn10-storm-2026-10-10) | `tn10-storm-1010` | 2026-10-10 | RUN (main) | public | The bot run and the build run, 10-11 Oct |  |
-| 36 | [tn10-storm-2026-10-10-public-nodes](https://github.com/STP-KAS/tn10-storm-2026-10-10-public-nodes) | `tn10-storm-1010-public-nodes` | 2026-10-10 | RUN | public | Public-node test, 10 Oct |  |
+| 35 | [tn10-storm-2026-10-10](https://github.com/STP-KAS/tn10-storm-2026-10-10) | `tn10-storm-1010` | 2026-10-10 | RUN (main) | public | The bot run and the build run, Sat 10 Oct 18:10 - Sun 11 Oct 02:35 UTC |  |
+| 36 | [tn10-storm-2026-10-10-public-nodes](https://github.com/STP-KAS/tn10-storm-2026-10-10-public-nodes) | `tn10-storm-1010-public-nodes` | 2026-10-10 | RUN | public | Public-node test, Sat 10 Oct 12:23-14:18 UTC |  |
 | 37 | [tn10-storm-2026-10-10-plan](https://github.com/STP-KAS/tn10-storm-2026-10-10-plan) | `tn10-private` | 2026-10-10 | COMPANION | public | 10 Oct plan, replaced the same day |  |
-| 38 | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) | `tn-storm-11-10` | 2026-10-11 | RUN | public | Flat-out run, 11 Oct |  |
+| 38 | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) | `tn-storm-11-10` | 2026-10-11 | RUN | public | Flat-out run, Sun 11 Oct 07:30-12:33 UTC |  |
 | 39 | [tn10-storm-2026-10-11-draft](https://github.com/STP-KAS/tn10-storm-2026-10-11-draft) | `tn10-run-2026-10-11` | 2026-10-11 | DUP (draft) | public, archived | Draft for 11 Oct, never run | archived |
 | 40 | [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush) | — | no date yet | PLAN | public | KCC-20 mint rush under storm load, auto-fee vs fixed-fee minters (plan, not a run) | renamed to `tn10-storm-YYYY-MM-DD` once a run date is set |
 

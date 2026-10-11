@@ -19,6 +19,12 @@
 
 Kaspa Pulse counts each run after it ends, on his own two nodes, with **accepted in blocks, two independent nodes, per UTC minute, by block time** (11 Oct: 07:30 to 12:30 UTC). From 11 Oct the bot also logs his method live in [logs/bot/pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv), **live from 10:48 UTC (12:48 CEST); first full minute 10:49 UTC**, with the start time written at the top of the file. Earlier minutes come from the after-run chain count. Because it buckets by the accepting chain block's timestamp, its minutes differ slightly from the chain-count rows (11:28Z: 3,645.9 tx/s there vs 3,583.1 in the chain count). His own count of 11 Oct is pending.
 
+## Dashboard tile vs per-minute count
+
+An explorer's TPS tile and accepted tx per UTC minute are **different measures**: the tile is an instantaneous dashboard reading over a short, unstated window, the per-minute count is every accepted transaction in one full UTC minute divided by 60. A tile can read higher than the best full minute without either being wrong. (Kaspa Pulse's independent count: pending his review.)
+
+**Two ways to bucket the same chain into minutes.** Our chain count ([chain-count.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/chain-count.csv.METHOD.md)) buckets by **when n2 saw each block** (the chain tip n2 had at each UTC-minute boundary): peak **3,583.1 tx/s** at 11:28Z on 11 Oct. A count **by block time** puts each block in the minute of its timestamp: our own mirror ([pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv.METHOD.md)) read **3,645.9 tx/s** for the same minute. Same chain, a few boundary blocks shifted; totals over many minutes agree. Always say which bucketing a minute uses. Method sidecars for every published per-minute CSV: [tn10-storm-2026-10-11 logs](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/README.md#method-per-file), [tn10-storm-2026-10-10 logs](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/logs/README.md#method-per-file).
+
 ## Windows
 
 Per block (one 0.1 s block, very spiky), per second, per minute (headline: median of complete minutes), per step or hold (mean and median). Always state the window. A 10-second or 20-second peak is not a sustained rate.

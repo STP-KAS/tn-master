@@ -22,3 +22,23 @@ Testnet-10 only. Each item says what we saw and where. Mainnet: label **B** (sam
 12. **Stop sending to a dead node (Kaspa Pulse's node-dead rule).** From Kaspa Pulse ([@gokugalax](https://x.com/gokugalax)), who saw our senders fire at a dead node in his outside count of 9-10 Oct: RPC failing, not synced, lag over 60 s, or DAA still for 30 s means pause and fail over. A failed submit is a reject, never "sent". [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md).
 13. **Measure the right number.** Report network unique accepted, and keep submit-OK apart. Cross-check with an independent count such as **Kaspa Pulse's "accepted in blocks, two independent nodes, per UTC minute, by block time"**, and remember the ~56 tx/s base load (his figure). Do not treat dashboards as truth. See [METRICS.md](METRICS.md), [MASTER.md](history/MASTER.md), [tn10-storm-2026-10-06](https://github.com/STP-KAS/tn10-storm-2026-10-06).
 14. **Operators: budget disk for pruning bursts (up to about 16 GB in 30 min) and keep `utxoindex` stable.** Rebuilding it took 18.5 min offline and about 13 GB. Count the chain right after a run, before pruning (Kaspa Pulse). [round 4 lessons](https://github.com/STP-KAS/tn10-storm-2026-09-26-r4#flaws-and-operational-lessons), [stress-findings item 6](https://github.com/STP-KAS/tn10-storm-2026-09-25).
+
+---
+
+## Hypothetical scenario: mint rush after smart contracts (stp, 11 Oct 2026)
+
+> **Hypothetical, open for debate.** TN10 only, not tested on mainnet (**label B**). Not a prediction.
+
+**Hypothetical (stp):** the first big real-world load on mainnet after smart contracts land may well be a mint rush, like the KCC-20 mints on TN10. If so, dapps, wallets and infrastructure should already have congestion monitoring with an automatic, capped fee raise in place.
+
+**Evidence we already have** (links only; do not duplicate the numbered items above):
+
+- Item 1 — auto fee raise on a congestion signal
+- Item 2 — min fee waited ~7 s at the median and up to 105 s under overload; 10× min confirmed in ≤3.7 s
+- Item 3 — cap the fee: paying priority as-is burned ~900 TKAS in 11.5 min
+- Item 5 — re-broadcast after node restarts
+- Item 8 — track coins in flight
+
+**Observation (11 Oct storm):** fees were raised mid-run (400/600 → 560/840 → 1,120/1,680 sompi/gram) as covenant activity grew, per stp's observation on Kaspa Stream, not our measurement. [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11).
+
+**Related but not a rush:** on 11 Oct, tn ops2 minted 2,488 trump2028 KCC-20 odd-leaf tokens on a quiet network; all landed with 0 rejects. That is not a mint rush under storm load. Logs: [STP-KAS/stp-trump2028](https://github.com/STP-KAS/stp-trump2028). A mint rush under storm load is a suggested future TN10 test (see [OPEN-QUESTIONS](docs/OPEN-QUESTIONS.md)).

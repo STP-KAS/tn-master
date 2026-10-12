@@ -67,6 +67,7 @@ tn-master/
 | [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility (incl. the [mint-rush plan](https://github.com/STP-KAS/tn10-storm-plan-mint-rush)) |
 | [repos/RENAME-LOG.md](repos/RENAME-LOG.md) | The 11 Oct 2026 renames |
 | [docs/LESSONS.md](docs/LESSONS.md) · [docs/OPEN-QUESTIONS.md](docs/OPEN-QUESTIONS.md) | Operations lessons; what still needs testing |
+| [tn10-lowio-1148-notes](https://github.com/STP-KAS/tn10-lowio-1148-notes) | Notes on rusty-kaspa PR #1148 (lowio preset): diff read, risks, A/B test (FINDINGS 18) |
 
 Counts only. No IP, host, port, key, seed, txid or wallet address on these pages. Public TN10 node names are allowed.
 

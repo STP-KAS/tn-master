@@ -73,4 +73,3 @@ Counts only. No IP, host, port, key, seed, txid or wallet address on these pages
 
 ---
 
-Intentions are good; thought process is questionable. STP remains delusional.

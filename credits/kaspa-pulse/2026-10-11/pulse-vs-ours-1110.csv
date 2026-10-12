@@ -1,0 +1,310 @@
+# Kaspa Pulse count vs our chain count, TN10 storm Sun 11 Oct 2026, 07:30-12:33 UTC, one row per UTC minute. CEST = UTC+2.
+# pulse_*: Kaspa Pulse (@gokugalax): tx accepted in blocks, two independent nodes, per UTC minute bucketed by block time, every minute confirmed by both nodes. Includes ~56 tx/s TN10 base load.
+# ours_*: logs/bot/chain-count.csv: unique accepted tx ids on n2 (bot node) virtual chain minus one coinbase per chain block, bucketed by the chain sink n2 had at each UTC-minute boundary (n2 receive time). span_min>1 = lumped row (total in first minute).
+# ours_blocktime_*: logs/bot/pulse-method-minute.csv (our mirror of Pulse method, by accepting chain block time; n2 and muon-10.kaspa.blue), live from 10:49Z only.
+# diff_tx_s = ours_tx_s - pulse_tx_s, only on our 171 headline minutes (headline_strict=yes). Lumped spans are compared as totals in note. Counts only.
+minute_utc,minute_cest,pulse_accepted_tx,pulse_tx_s,pulse_blocks,pulse_complete,pulse_both_nodes,pulse_miners,ours_accepted_tx,ours_tx_s,ours_span_min,ours_headline_strict,ours_bot_miner_blocks,diff_tx_s,diff_pct,ours_blocktime_n2_tx_s,ours_blocktime_public_tx_s,diff_blocktime_public_tx_s,note
+2026-10-11T07:30Z,09:30,150802,2513.37,705,yes,yes,8,151191.0,2519.8,1.0,yes,245.0,6.4,0.26,,,,
+2026-10-11T07:31Z,09:31,157794,2629.9,670,yes,yes,8,157069.0,2617.8,1.0,yes,234.0,-12.1,-0.46,,,,
+2026-10-11T07:32Z,09:32,153363,2556.05,631,yes,yes,8,155307.0,2588.4,1.0,yes,200.0,32.3,1.27,,,,
+2026-10-11T07:33Z,09:33,145181,2419.68,704,yes,yes,8,144045.0,2400.8,1.0,yes,256.0,-18.9,-0.78,,,,
+2026-10-11T07:34Z,09:34,145524,2425.4,686,yes,yes,8,145445.0,2424.1,1.0,yes,225.0,-1.3,-0.05,,,,
+2026-10-11T07:35Z,09:35,152552,2542.53,704,yes,yes,8,152485.0,2541.4,1.0,yes,224.0,-1.1,-0.04,,,,
+2026-10-11T07:36Z,09:36,160226,2670.43,665,yes,yes,8,160848.0,2680.8,1.0,yes,219.0,10.4,0.39,,,,
+2026-10-11T07:37Z,09:37,167562,2792.7,559,yes,yes,7,165918.0,2765.3,1.0,yes,210.0,-27.4,-0.98,,,,
+2026-10-11T07:38Z,09:38,114782,1913.03,484,yes,yes,8,494994.0,8249.9,8.0,no,,,,,,,"start of our lumped recount row: 8 min 07:38-07:45Z, ours 494994 tx vs Pulse 910687 tx over the same minutes, diff -415693 (-45.65%)"
+2026-10-11T07:39Z,09:39,95255,1587.58,421,yes,yes,6,,,8.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:40Z,09:40,113942,1899.03,478,yes,yes,6,,,8.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:41Z,09:41,106718,1778.63,426,yes,yes,6,,,8.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:42Z,09:42,105055,1750.92,461,yes,yes,6,,,8.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:43Z,09:43,109998,1833.3,617,yes,yes,7,,,8.0,no,196.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:44Z,09:44,142965,2382.75,693,yes,yes,7,0.0,0.0,8.0,no,238.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:45Z,09:45,121972,2032.87,636,yes,yes,7,,,8.0,no,224.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:46Z,09:46,127759,2129.32,548,yes,yes,7,804191.0,13403.2,3.0,no,210.0,,,,,,"start of our lumped recount row: 3 min 07:46-07:48Z, ours 804191 tx vs Pulse 388133 tx over the same minutes, diff +416058 (+107.19%)"
+2026-10-11T07:47Z,09:47,126915,2115.25,570,yes,yes,7,133436.0,2223.9,3.0,no,214.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:48Z,09:48,133459,2224.32,649,yes,yes,7,132896.0,2214.9,3.0,no,233.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:49Z,09:49,139209,2320.15,619,yes,yes,7,140114.0,2335.2,1.0,yes,238.0,15.0,0.65,,,,
+2026-10-11T07:50Z,09:50,145142,2419.03,622,yes,yes,7,144167.0,2402.8,1.0,yes,206.0,-16.2,-0.67,,,,
+2026-10-11T07:51Z,09:51,151629,2527.15,624,yes,yes,7,152073.0,2534.6,1.0,yes,229.0,7.4,0.29,,,,
+2026-10-11T07:52Z,09:52,137386,2289.77,618,yes,yes,7,137358.0,2289.3,1.0,yes,219.0,-0.5,-0.02,,,,
+2026-10-11T07:53Z,09:53,139513,2325.22,639,yes,yes,7,139220.0,2320.3,1.0,yes,245.0,-4.9,-0.21,,,,
+2026-10-11T07:54Z,09:54,145552,2425.87,645,yes,yes,8,279071.0,4651.2,2.0,no,214.0,,,,,,"start of our lumped recount row: 2 min 07:54-07:55Z, ours 279071 tx vs Pulse 278724 tx over the same minutes, diff +347 (+0.12%)"
+2026-10-11T07:55Z,09:55,133172,2219.53,613,yes,yes,7,132926.0,2215.4,2.0,no,220.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:56Z,09:56,133896,2231.6,606,yes,yes,7,134654.0,2244.2,1.0,yes,206.0,12.6,0.56,,,,
+2026-10-11T07:57Z,09:57,138784,2313.07,627,yes,yes,8,267746.0,4462.4,2.0,no,207.0,,,,,,"start of our lumped recount row: 2 min 07:57-07:58Z, ours 267746 tx vs Pulse 267567 tx over the same minutes, diff +179 (+0.07%)"
+2026-10-11T07:58Z,09:58,128783,2146.38,596,yes,yes,7,129088.0,2151.5,2.0,no,190.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T07:59Z,09:59,126905,2115.08,606,yes,yes,9,126099.0,2101.7,1.0,yes,195.0,-13.4,-0.63,,,,
+2026-10-11T08:00Z,10:00,140989,2349.82,643,yes,yes,8,141854.0,2364.2,1.0,yes,196.0,14.4,0.61,,,,
+2026-10-11T08:01Z,10:01,140932,2348.87,671,yes,yes,8,140617.0,2343.6,1.0,yes,223.0,-5.3,-0.22,,,,
+2026-10-11T08:02Z,10:02,132611,2210.18,643,yes,yes,9,131602.0,2193.4,1.0,yes,194.0,-16.8,-0.76,,,,
+2026-10-11T08:03Z,10:03,134145,2235.75,651,yes,yes,9,134835.0,2247.2,1.0,yes,190.0,11.4,0.51,,,,
+2026-10-11T08:04Z,10:04,138889,2314.82,598,yes,yes,7,139490.0,2324.8,1.0,yes,219.0,10.0,0.43,,,,
+2026-10-11T08:05Z,10:05,146948,2449.13,674,yes,yes,10,288833.0,4813.9,2.0,no,239.0,,,,,,"start of our lumped recount row: 2 min 08:05-08:06Z, ours 288833 tx vs Pulse 288790 tx over the same minutes, diff +43 (+0.01%)"
+2026-10-11T08:06Z,10:06,141842,2364.03,617,yes,yes,8,143073.0,2384.6,2.0,no,218.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:07Z,10:07,152244,2537.4,637,yes,yes,10,321227.0,5353.8,2.0,no,190.0,,,,,,"start of our lumped recount row: 2 min 08:07-08:08Z, ours 321227 tx vs Pulse 321211 tx over the same minutes, diff +16 (+0.00%)"
+2026-10-11T08:08Z,10:08,168967,2816.12,658,yes,yes,9,167630.0,2793.8,2.0,no,201.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:09Z,10:09,174493,2908.22,646,yes,yes,8,174562.0,2909.4,1.0,yes,231.0,1.2,0.04,,,,
+2026-10-11T08:10Z,10:10,182326,3038.77,672,yes,yes,8,181645.0,3027.4,1.0,yes,207.0,-11.4,-0.37,,,,
+2026-10-11T08:11Z,10:11,177950,2965.83,633,yes,yes,8,180326.0,3005.4,1.0,yes,205.0,39.6,1.33,,,,
+2026-10-11T08:12Z,10:12,191357,3189.28,699,yes,yes,8,547514.0,9125.2,3.0,no,244.0,,,,,,"start of our lumped recount row: 3 min 08:12-08:14Z, ours 547514 tx vs Pulse 550259 tx over the same minutes, diff -2745 (-0.50%)"
+2026-10-11T08:13Z,10:13,172730,2878.83,626,yes,yes,8,173363.0,2889.4,3.0,no,189.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:14Z,10:14,186172,3102.87,616,yes,yes,8,186486.0,3108.1,3.0,no,206.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:15Z,10:15,192071,3201.18,624,yes,yes,8,190304.0,3171.7,1.0,yes,202.0,-29.5,-0.92,,,,
+2026-10-11T08:16Z,10:16,201308,3355.13,694,yes,yes,8,201946.0,3365.8,1.0,yes,234.0,10.7,0.32,,,,
+2026-10-11T08:17Z,10:17,197311,3288.52,662,yes,yes,8,197311.0,3288.5,1.0,yes,212.0,-0.0,-0.0,,,,
+2026-10-11T08:18Z,10:18,192932,3215.53,640,yes,yes,8,192932.0,3215.5,1.0,yes,212.0,-0.0,-0.0,,,,
+2026-10-11T08:19Z,10:19,191935,3198.92,652,yes,yes,8,191594.0,3193.2,1.0,yes,205.0,-5.7,-0.18,,,,
+2026-10-11T08:20Z,10:20,187857,3130.95,598,yes,yes,8,189216.0,3153.6,1.0,yes,181.0,22.7,0.72,,,,
+2026-10-11T08:21Z,10:21,193399,3223.32,636,yes,yes,8,192381.0,3206.3,1.0,yes,207.0,-17.0,-0.53,,,,
+2026-10-11T08:22Z,10:22,186757,3112.62,633,yes,yes,8,186757.0,3112.6,1.0,yes,178.0,-0.0,-0.0,,,,
+2026-10-11T08:23Z,10:23,194893,3248.22,696,yes,yes,8,194893.0,3248.2,1.0,yes,233.0,-0.0,-0.0,,,,
+2026-10-11T08:24Z,10:24,183271,3054.52,615,yes,yes,9,367453.0,6124.2,2.0,no,202.0,,,,,,"start of our lumped recount row: 2 min 08:24-08:25Z, ours 367453 tx vs Pulse 368347 tx over the same minutes, diff -894 (-0.24%)"
+2026-10-11T08:25Z,10:25,185076,3084.6,654,yes,yes,9,184824.0,3080.4,2.0,no,193.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:26Z,10:26,183260,3054.33,761,yes,yes,9,184787.0,3079.8,1.0,yes,198.0,25.5,0.83,,,,our value from the live chain logger (recount gap)
+2026-10-11T08:27Z,10:27,189715,3161.92,790,yes,yes,9,189240.0,3154.0,1.0,yes,202.0,-7.9,-0.25,,,,our value from the live chain logger (recount gap)
+2026-10-11T08:28Z,10:28,173686,2894.77,660,yes,yes,9,174904.0,2915.1,1.0,yes,192.0,20.3,0.7,,,,our value from the live chain logger (recount gap)
+2026-10-11T08:29Z,10:29,166840,2780.67,585,yes,yes,7,166452.0,2774.2,1.0,yes,193.0,-6.5,-0.23,,,,our value from the live chain logger (recount gap)
+2026-10-11T08:30Z,10:30,176833,2947.22,624,yes,yes,8,177759.0,2962.7,1.0,yes,184.0,15.5,0.53,,,,
+2026-10-11T08:31Z,10:31,167194,2786.57,578,yes,yes,8,167194.0,2786.6,1.0,yes,206.0,0.0,0.0,,,,
+2026-10-11T08:32Z,10:32,174284,2904.73,610,yes,yes,8,173671.0,2894.5,1.0,yes,193.0,-10.2,-0.35,,,,
+2026-10-11T08:33Z,10:33,178899,2981.65,637,yes,yes,8,180325.0,3005.4,1.0,yes,196.0,23.8,0.8,,,,
+2026-10-11T08:34Z,10:34,182968,3049.47,648,yes,yes,8,182939.0,3049.0,1.0,yes,221.0,-0.5,-0.02,,,,
+2026-10-11T08:35Z,10:35,170083,2834.72,569,yes,yes,8,520965.0,8682.8,3.0,no,185.0,,,,,,"start of our lumped recount row: 3 min 08:35-08:37Z, ours 520965 tx vs Pulse 521749 tx over the same minutes, diff -784 (-0.15%)"
+2026-10-11T08:36Z,10:36,176479,2941.32,682,yes,yes,9,175997.0,2933.3,3.0,no,203.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:37Z,10:37,175187,2919.78,693,yes,yes,9,175187.0,2919.8,3.0,no,179.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:38Z,10:38,180970,3016.17,646,yes,yes,9,180970.0,3016.2,1.0,yes,195.0,0.0,0.0,,,,
+2026-10-11T08:39Z,10:39,193957,3232.62,746,yes,yes,9,193957.0,3232.6,1.0,yes,228.0,-0.0,-0.0,,,,
+2026-10-11T08:40Z,10:40,193197,3219.95,667,yes,yes,9,193197.0,3219.9,1.0,yes,194.0,-0.0,-0.0,,,,
+2026-10-11T08:41Z,10:41,201675,3361.25,696,yes,yes,10,202068.0,3367.8,1.0,yes,188.0,6.6,0.19,,,,
+2026-10-11T08:42Z,10:42,196923,3282.05,665,yes,yes,10,386485.0,6441.4,2.0,no,184.0,,,,,,"start of our lumped recount row: 2 min 08:42-08:43Z, ours 386485 tx vs Pulse 385799 tx over the same minutes, diff +686 (+0.18%)"
+2026-10-11T08:43Z,10:43,188876,3147.93,682,yes,yes,9,188989.0,3149.8,2.0,no,169.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:44Z,10:44,205919,3431.98,706,yes,yes,9,1254233.0,20903.9,9.0,no,205.0,,,,,,"start of our lumped recount row: 9 min 08:44-08:52Z, ours 1254233 tx vs Pulse 1256079 tx over the same minutes, diff -1846 (-0.15%)"
+2026-10-11T08:45Z,10:45,174909,2915.15,560,yes,yes,8,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:46Z,10:46,126059,2100.98,480,yes,yes,8,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:47Z,10:47,106204,1770.07,403,yes,yes,7,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:48Z,10:48,109177,1819.62,460,yes,yes,8,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:49Z,10:49,102207,1703.45,506,yes,yes,8,6082.0,101.4,9.0,no,85.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:50Z,10:50,146199,2436.65,618,yes,yes,8,0.0,0.0,9.0,no,225.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:51Z,10:51,140584,2343.07,653,yes,yes,8,,,9.0,no,276.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:52Z,10:52,144821,2413.68,547,yes,yes,8,,,9.0,no,183.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:53Z,10:53,157688,2628.13,565,yes,yes,8,158888.0,2648.1,1.0,yes,178.0,20.0,0.76,,,,
+2026-10-11T08:54Z,10:54,156800,2613.33,656,yes,yes,8,156913.0,2615.2,1.0,yes,185.0,1.9,0.07,,,,
+2026-10-11T08:55Z,10:55,164076,2734.6,586,yes,yes,8,508120.0,8468.7,3.0,no,177.0,,,,,,"start of our lumped recount row: 3 min 08:55-08:57Z, ours 508120 tx vs Pulse 507796 tx over the same minutes, diff +324 (+0.06%)"
+2026-10-11T08:56Z,10:56,167558,2792.63,585,yes,yes,8,167429.0,2790.5,3.0,no,197.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:57Z,10:57,176162,2936.03,586,yes,yes,8,176573.0,2942.9,3.0,no,190.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T08:58Z,10:58,183692,3061.53,573,yes,yes,8,377150.0,6285.8,2.0,no,181.0,,,,,,"start of our lumped recount row: 2 min 08:58-08:59Z, ours 377150 tx vs Pulse 376653 tx over the same minutes, diff +497 (+0.13%)"
+2026-10-11T08:59Z,10:59,192961,3216.02,624,yes,yes,8,193695.0,3228.2,2.0,no,228.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:00Z,11:00,179847,2997.45,616,yes,yes,8,179734.0,2995.6,1.0,yes,189.0,-1.8,-0.06,,,,
+2026-10-11T09:01Z,11:01,181759,3029.32,590,yes,yes,8,366030.0,6100.5,2.0,no,197.0,,,,,,"start of our lumped recount row: 2 min 09:01-09:02Z, ours 366030 tx vs Pulse 365787 tx over the same minutes, diff +243 (+0.07%)"
+2026-10-11T09:02Z,11:02,184028,3067.13,594,yes,yes,8,184229.0,3070.5,2.0,no,198.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:03Z,11:03,186186,3103.1,638,yes,yes,8,186423.0,3107.1,1.0,yes,208.0,4.0,0.13,,,,
+2026-10-11T09:04Z,11:04,188474,3141.23,596,yes,yes,8,188297.0,3138.3,1.0,yes,193.0,-2.9,-0.09,,,,
+2026-10-11T09:05Z,11:05,183428,3057.13,590,yes,yes,8,183637.0,3060.6,1.0,yes,168.0,3.5,0.11,,,,
+2026-10-11T09:06Z,11:06,184511,3075.18,581,yes,yes,7,183184.0,3053.1,1.0,yes,211.0,-22.1,-0.72,,,,
+2026-10-11T09:07Z,11:07,181912,3031.87,606,yes,yes,8,183752.0,3062.5,1.0,yes,193.0,30.6,1.01,,,,
+2026-10-11T09:08Z,11:08,176451,2940.85,589,yes,yes,8,175747.0,2929.1,1.0,yes,186.0,-11.8,-0.4,,,,
+2026-10-11T09:09Z,11:09,178523,2975.38,557,yes,yes,8,177476.0,2957.9,1.0,yes,181.0,-17.5,-0.59,,,,
+2026-10-11T09:10Z,11:10,176986,2949.77,567,yes,yes,8,178998.0,2983.3,1.0,yes,175.0,33.5,1.14,,,,
+2026-10-11T09:11Z,11:11,183309,3055.15,577,yes,yes,8,182923.0,3048.7,1.0,yes,179.0,-6.5,-0.21,,,,
+2026-10-11T09:12Z,11:12,184791,3079.85,603,yes,yes,8,184687.0,3078.1,1.0,yes,181.0,-1.8,-0.06,,,,
+2026-10-11T09:13Z,11:13,184319,3071.98,596,yes,yes,8,184403.0,3073.4,1.0,yes,209.0,1.4,0.05,,,,
+2026-10-11T09:14Z,11:14,182490,3041.5,616,yes,yes,8,182247.0,3037.4,1.0,yes,221.0,-4.1,-0.13,,,,
+2026-10-11T09:15Z,11:15,159559,2659.32,598,yes,yes,8,159741.0,2662.3,1.0,yes,187.0,3.0,0.11,,,,
+2026-10-11T09:16Z,11:16,139080,2318.0,581,yes,yes,8,138326.0,2305.4,1.0,yes,193.0,-12.6,-0.54,,,,
+2026-10-11T09:17Z,11:17,122151,2035.85,618,yes,yes,8,121942.0,2032.4,1.0,yes,173.0,-3.4,-0.17,,,,
+2026-10-11T09:18Z,11:18,111593,1859.88,574,yes,yes,8,112336.0,1872.3,1.0,yes,186.0,12.4,0.67,,,,
+2026-10-11T09:19Z,11:19,102938,1715.63,580,yes,yes,8,101936.0,1698.9,1.0,yes,151.0,-16.7,-0.98,,,,
+2026-10-11T09:20Z,11:20,97586,1626.43,627,yes,yes,8,97890.0,1631.5,1.0,yes,187.0,5.1,0.31,,,,
+2026-10-11T09:21Z,11:21,96570,1609.5,638,yes,yes,8,96662.0,1611.0,1.0,yes,205.0,1.5,0.09,,,,
+2026-10-11T09:22Z,11:22,97089,1618.15,605,yes,yes,8,97459.0,1624.3,1.0,yes,180.0,6.1,0.38,,,,
+2026-10-11T09:23Z,11:23,95860,1597.67,667,yes,yes,8,95787.0,1596.5,1.0,yes,213.0,-1.2,-0.07,,,,
+2026-10-11T09:24Z,11:24,77111,1285.18,710,yes,yes,8,151928.0,2532.1,2.0,no,179.0,,,,,,"start of our lumped recount row: 2 min 09:24-09:25Z, ours 151928 tx vs Pulse 152692 tx over the same minutes, diff -764 (-0.50%)"
+2026-10-11T09:25Z,11:25,75581,1259.68,662,yes,yes,8,75665.0,1261.1,2.0,no,201.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:26Z,11:26,75265,1254.42,642,yes,yes,8,75774.0,1262.9,1.0,yes,177.0,8.5,0.68,,,,
+2026-10-11T09:27Z,11:27,76302,1271.7,683,yes,yes,8,75534.0,1258.9,1.0,yes,224.0,-12.8,-1.01,,,,
+2026-10-11T09:28Z,11:28,76636,1277.27,618,yes,yes,8,77421.0,1290.3,1.0,yes,180.0,13.0,1.02,,,,
+2026-10-11T09:29Z,11:29,81497,1358.28,637,yes,yes,8,233985.0,3899.8,2.0,no,188.0,,,,,,"start of our lumped recount row: 2 min 09:29-09:30Z, ours 233985 tx vs Pulse 235291 tx over the same minutes, diff -1306 (-0.56%)"
+2026-10-11T09:30Z,11:30,153794,2563.23,614,yes,yes,8,153794.0,2563.2,2.0,no,186.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:31Z,11:31,183400,3056.67,573,yes,yes,8,183400.0,3056.7,1.0,yes,194.0,0.0,0.0,,,,
+2026-10-11T09:32Z,11:32,178975,2982.92,542,yes,yes,7,178975.0,2982.9,1.0,yes,184.0,-0.0,-0.0,,,,
+2026-10-11T09:33Z,11:33,198557,3309.28,651,yes,yes,8,387049.0,6450.8,2.0,no,212.0,,,,,,"start of our lumped recount row: 2 min 09:33-09:34Z, ours 387049 tx vs Pulse 387049 tx over the same minutes, diff +0 (+0.00%)"
+2026-10-11T09:34Z,11:34,188492,3141.53,566,yes,yes,8,187369.0,3122.8,2.0,no,189.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:35Z,11:35,188171,3136.18,576,yes,yes,8,186563.0,3109.4,1.0,yes,188.0,-26.8,-0.85,,,,
+2026-10-11T09:36Z,11:36,185082,3084.7,556,yes,yes,8,373385.0,6223.1,2.0,no,163.0,,,,,,"start of our lumped recount row: 2 min 09:36-09:37Z, ours 373385 tx vs Pulse 371777 tx over the same minutes, diff +1608 (+0.43%)"
+2026-10-11T09:37Z,11:37,186695,3111.58,562,yes,yes,8,186695.0,3111.6,2.0,no,192.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:38Z,11:38,187220,3120.33,593,yes,yes,8,187220.0,3120.3,1.0,yes,195.0,-0.0,-0.0,,,,
+2026-10-11T09:39Z,11:39,192531,3208.85,591,yes,yes,8,385785.0,6429.8,2.0,no,194.0,,,,,,"start of our lumped recount row: 2 min 09:39-09:40Z, ours 385785 tx vs Pulse 386594 tx over the same minutes, diff -809 (-0.21%)"
+2026-10-11T09:40Z,11:40,194063,3234.38,637,yes,yes,8,193254.0,3220.9,2.0,no,187.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:41Z,11:41,193775,3229.58,601,yes,yes,8,194584.0,3243.1,1.0,yes,214.0,13.5,0.42,,,,
+2026-10-11T09:42Z,11:42,183690,3061.5,543,yes,yes,8,378631.0,6310.5,2.0,no,169.0,,,,,,"start of our lumped recount row: 2 min 09:42-09:43Z, ours 378631 tx vs Pulse 378057 tx over the same minutes, diff +574 (+0.15%)"
+2026-10-11T09:43Z,11:43,194367,3239.45,592,yes,yes,8,196010.0,3266.8,2.0,no,225.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:44Z,11:44,185079,3084.65,558,yes,yes,9,184929.0,3082.2,1.0,yes,170.0,-2.5,-0.08,,,,
+2026-10-11T09:45Z,11:45,197480,3291.33,627,yes,yes,8,196365.0,3272.8,1.0,yes,210.0,-18.5,-0.56,,,,
+2026-10-11T09:46Z,11:46,193498,3224.97,613,yes,yes,8,195672.0,3261.2,1.0,yes,182.0,36.2,1.12,,,,
+2026-10-11T09:47Z,11:47,187744,3129.07,569,yes,yes,8,378940.0,6315.7,2.0,no,198.0,,,,,,"start of our lumped recount row: 2 min 09:47-09:48Z, ours 378940 tx vs Pulse 380423 tx over the same minutes, diff -1483 (-0.39%)"
+2026-10-11T09:48Z,11:48,192679,3211.32,603,yes,yes,8,192293.0,3204.9,2.0,no,169.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:49Z,11:49,195437,3257.28,616,yes,yes,8,196928.0,3282.1,1.0,yes,199.0,24.8,0.76,,,,
+2026-10-11T09:50Z,11:50,199559,3325.98,630,yes,yes,8,198068.0,3301.1,1.0,yes,215.0,-24.9,-0.75,,,,
+2026-10-11T09:51Z,11:51,193846,3230.77,610,yes,yes,8,385148.0,6419.1,2.0,no,198.0,,,,,,"start of our lumped recount row: 2 min 09:51-09:52Z, ours 385148 tx vs Pulse 384710 tx over the same minutes, diff +438 (+0.11%)"
+2026-10-11T09:52Z,11:52,190864,3181.07,595,yes,yes,8,190200.0,3170.0,2.0,no,183.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:53Z,11:53,191473,3191.22,591,yes,yes,8,191035.0,3183.9,1.0,yes,197.0,-7.3,-0.23,,,,
+2026-10-11T09:54Z,11:54,190280,3171.33,589,yes,yes,8,190280.0,3171.3,1.0,yes,177.0,-0.0,-0.0,,,,
+2026-10-11T09:55Z,11:55,188481,3141.35,580,yes,yes,8,191223.0,3187.1,1.0,yes,180.0,45.8,1.46,,,,
+2026-10-11T09:56Z,11:56,141891,2364.85,512,yes,yes,8,873064.0,14551.1,9.0,no,,,,,,,"start of our lumped recount row: 9 min 09:56-10:04Z, ours 873064 tx vs Pulse 1157203 tx over the same minutes, diff -284139 (-24.55%)"
+2026-10-11T09:57Z,11:57,119455,1990.92,452,yes,yes,8,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:58Z,11:58,115616,1926.93,451,yes,yes,8,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T09:59Z,11:59,111680,1861.33,441,yes,yes,7,,,9.0,no,,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:00Z,12:00,107234,1787.23,491,yes,yes,8,6104.0,101.7,9.0,no,65.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:01Z,12:01,146616,2443.6,633,yes,yes,8,0.0,0.0,9.0,no,209.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:02Z,12:02,154532,2575.53,664,yes,yes,8,0.0,0.0,9.0,no,232.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:03Z,12:03,137285,2288.08,635,yes,yes,8,213.0,3.5,9.0,no,217.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:04Z,12:04,122894,2048.23,603,yes,yes,9,,,9.0,no,187.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:05Z,12:05,168928,2815.47,596,yes,yes,8,451181.0,7519.7,1.0,no,199.0,,,,,,"our one-minute row has 696 chain blocks (previous boundary block off the final chain, so it carries earlier minutes); not comparable"
+2026-10-11T10:06Z,12:06,192290,3204.83,641,yes,yes,8,191838.0,3197.3,1.0,yes,196.0,-7.5,-0.23,,,,
+2026-10-11T10:07Z,12:07,186249,3104.15,585,yes,yes,8,188011.0,3133.5,1.0,yes,185.0,29.3,0.95,,,,
+2026-10-11T10:08Z,12:08,186248,3104.13,590,yes,yes,8,184082.0,3068.0,1.0,yes,193.0,-36.1,-1.16,,,,
+2026-10-11T10:09Z,12:09,187095,3118.25,599,yes,yes,8,188234.0,3137.2,1.0,yes,198.0,18.9,0.61,,,,
+2026-10-11T10:10Z,12:10,184765,3079.42,614,yes,yes,8,185159.0,3086.0,1.0,yes,184.0,6.6,0.21,,,,
+2026-10-11T10:11Z,12:11,179858,2997.63,591,yes,yes,8,178325.0,2972.1,1.0,yes,209.0,-25.5,-0.85,,,,
+2026-10-11T10:12Z,12:12,182671,3044.52,594,yes,yes,8,183267.0,3054.4,1.0,yes,177.0,9.9,0.32,,,,
+2026-10-11T10:13Z,12:13,192981,3216.35,648,yes,yes,8,193120.0,3218.7,1.0,yes,204.0,2.3,0.07,,,,
+2026-10-11T10:14Z,12:14,192077,3201.28,638,yes,yes,8,193156.0,3219.3,1.0,yes,203.0,18.0,0.56,,,,
+2026-10-11T10:15Z,12:15,189827,3163.78,636,yes,yes,8,188809.0,3146.8,1.0,yes,198.0,-17.0,-0.54,,,,
+2026-10-11T10:16Z,12:16,182637,3043.95,587,yes,yes,8,184318.0,3072.0,1.0,yes,186.0,28.1,0.92,,,,
+2026-10-11T10:17Z,12:17,192112,3201.87,626,yes,yes,8,191615.0,3193.6,1.0,yes,219.0,-8.3,-0.26,,,,
+2026-10-11T10:18Z,12:18,189359,3155.98,602,yes,yes,8,187834.0,3130.6,1.0,yes,205.0,-25.4,-0.8,,,,
+2026-10-11T10:19Z,12:19,182058,3034.3,568,yes,yes,9,182742.0,3045.7,1.0,yes,186.0,11.4,0.38,,,,
+2026-10-11T10:20Z,12:20,185913,3098.55,624,yes,yes,8,185915.0,3098.6,1.0,yes,185.0,0.0,0.0,,,,
+2026-10-11T10:21Z,12:21,194568,3242.8,627,yes,yes,8,379721.0,6328.7,2.0,no,222.0,,,,,,"start of our lumped recount row: 2 min 10:21-10:22Z, ours 379721 tx vs Pulse 376978 tx over the same minutes, diff +2743 (+0.73%)"
+2026-10-11T10:22Z,12:22,182410,3040.17,582,yes,yes,8,184695.0,3078.2,2.0,no,178.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:23Z,12:23,194388,3239.8,602,yes,yes,8,382255.0,6370.9,2.0,no,192.0,,,,,,"start of our lumped recount row: 2 min 10:23-10:24Z, ours 382255 tx vs Pulse 384610 tx over the same minutes, diff -2355 (-0.61%)"
+2026-10-11T10:24Z,12:24,190222,3170.37,595,yes,yes,8,188841.0,3147.3,2.0,no,192.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:25Z,12:25,178761,2979.35,531,yes,yes,8,382703.0,6378.4,2.0,no,163.0,,,,,,"start of our lumped recount row: 2 min 10:25-10:26Z, ours 382703 tx vs Pulse 380338 tx over the same minutes, diff +2365 (+0.62%)"
+2026-10-11T10:26Z,12:26,201577,3359.62,626,yes,yes,8,204129.0,3402.2,2.0,no,211.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:27Z,12:27,199212,3320.2,613,yes,yes,8,197214.0,3286.9,1.0,yes,197.0,-33.3,-1.0,,,,
+2026-10-11T10:28Z,12:28,197221,3287.02,632,yes,yes,8,196532.0,3275.5,1.0,yes,193.0,-11.5,-0.35,,,,our value from the live chain logger (recount gap)
+2026-10-11T10:29Z,12:29,190568,3176.13,568,yes,yes,9,191525.0,3192.1,1.0,yes,174.0,16.0,0.5,,,,our value from the live chain logger (recount gap)
+2026-10-11T10:30Z,12:30,192285,3204.75,601,yes,yes,8,199026.0,3317.1,1.0,yes,177.0,112.3,3.51,,,,
+2026-10-11T10:31Z,12:31,197463,3291.05,583,yes,yes,8,198971.0,3316.2,1.0,yes,205.0,25.1,0.76,,,,
+2026-10-11T10:32Z,12:32,199179,3319.65,589,yes,yes,8,197264.0,3287.7,1.0,yes,200.0,-32.0,-0.96,,,,
+2026-10-11T10:33Z,12:33,203839,3397.32,646,yes,yes,8,203245.0,3387.4,1.0,yes,212.0,-9.9,-0.29,,,,
+2026-10-11T10:34Z,12:34,205394,3423.23,614,yes,yes,9,399011.0,6650.2,2.0,no,206.0,,,,,,"start of our lumped recount row: 2 min 10:34-10:35Z, ours 399011 tx vs Pulse 397610 tx over the same minutes, diff +1401 (+0.35%)"
+2026-10-11T10:35Z,12:35,192216,3203.6,612,yes,yes,8,193448.0,3224.1,2.0,no,205.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:36Z,12:36,195079,3251.32,586,yes,yes,8,391162.0,6519.4,2.0,no,186.0,,,,,,"start of our lumped recount row: 2 min 10:36-10:37Z, ours 391162 tx vs Pulse 395289 tx over the same minutes, diff -4127 (-1.04%)"
+2026-10-11T10:37Z,12:37,200210,3336.83,596,yes,yes,8,196900.0,3281.7,2.0,no,175.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:38Z,12:38,193323,3222.05,586,yes,yes,8,193240.0,3220.7,1.0,yes,196.0,-1.4,-0.04,,,,
+2026-10-11T10:39Z,12:39,204966,3416.1,662,yes,yes,7,206251.0,3437.5,1.0,yes,210.0,21.4,0.63,,,,
+2026-10-11T10:40Z,12:40,194680,3244.67,587,yes,yes,8,195524.0,3258.7,1.0,yes,210.0,14.0,0.43,,,,
+2026-10-11T10:41Z,12:41,209382,3489.7,656,yes,yes,8,208538.0,3475.6,1.0,yes,209.0,-14.1,-0.4,,,,
+2026-10-11T10:42Z,12:42,203435,3390.58,622,yes,yes,8,203435.0,3390.6,1.0,yes,177.0,0.0,0.0,,,,
+2026-10-11T10:43Z,12:43,204476,3407.93,624,yes,yes,8,203606.0,3393.4,1.0,yes,193.0,-14.5,-0.43,,,,
+2026-10-11T10:44Z,12:44,196841,3280.68,601,yes,yes,8,197711.0,3295.2,1.0,yes,186.0,14.5,0.44,,,,
+2026-10-11T10:45Z,12:45,206630,3443.83,629,yes,yes,8,408933.0,6815.6,2.0,no,207.0,,,,,,"start of our lumped recount row: 2 min 10:45-10:46Z, ours 408933 tx vs Pulse 408933 tx over the same minutes, diff +0 (+0.00%)"
+2026-10-11T10:46Z,12:46,202303,3371.72,620,yes,yes,8,202303.0,3371.7,2.0,no,186.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:47Z,12:47,197343,3289.05,595,yes,yes,8,392119.0,6535.3,2.0,no,182.0,,,,,,"start of our lumped recount row: 2 min 10:47-10:48Z, ours 392119 tx vs Pulse 392119 tx over the same minutes, diff +0 (+0.00%)"
+2026-10-11T10:48Z,12:48,194776,3246.27,583,yes,yes,7,194023.0,3233.7,2.0,no,203.0,,,,,,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:49Z,12:49,198911,3315.18,608,yes,yes,8,584926.0,9748.8,3.0,no,203.0,,,3315.2,3315.2,0.0,"start of our lumped recount row: 3 min 10:49-10:51Z, ours 584926 tx vs Pulse 584926 tx over the same minutes, diff +0 (+0.00%)"
+2026-10-11T10:50Z,12:50,193450,3224.17,630,yes,yes,8,195140.0,3252.3,3.0,no,200.0,,,3224.2,3224.2,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:51Z,12:51,192565,3209.42,579,yes,yes,8,191448.0,3190.8,3.0,no,180.0,,,3209.4,3209.4,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:52Z,12:52,193517,3225.28,605,yes,yes,8,193517.0,3225.3,1.0,yes,197.0,0.0,0.0,3225.3,3225.3,0.0,
+2026-10-11T10:53Z,12:53,185505,3091.75,563,yes,yes,8,186293.0,3104.9,1.0,yes,196.0,13.2,0.43,3091.8,3091.8,0.1,
+2026-10-11T10:54Z,12:54,197751,3295.85,617,yes,yes,9,197847.0,3297.4,1.0,yes,183.0,1.6,0.05,3295.8,3295.8,-0.0,
+2026-10-11T10:55Z,12:55,184727,3078.78,560,yes,yes,8,577637.0,9627.3,3.0,no,184.0,,,3078.8,3078.8,0.0,"start of our lumped recount row: 3 min 10:55-10:57Z, ours 577637 tx vs Pulse 577372 tx over the same minutes, diff +265 (+0.05%)"
+2026-10-11T10:56Z,12:56,200919,3348.65,623,yes,yes,9,202034.0,3367.2,3.0,no,204.0,,,3348.7,3348.7,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:57Z,12:57,191726,3195.43,576,yes,yes,8,191760.0,3196.0,3.0,no,181.0,,,3195.4,3195.4,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T10:58Z,12:58,202862,3381.03,623,yes,yes,8,399900.0,6665.0,2.0,no,203.0,,,3381.0,3381.0,-0.0,"start of our lumped recount row: 2 min 10:58-10:59Z, ours 399900 tx vs Pulse 399549 tx over the same minutes, diff +351 (+0.09%)"
+2026-10-11T10:59Z,12:59,196687,3278.12,606,yes,yes,8,197494.0,3291.6,2.0,no,193.0,,,3278.1,3278.1,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:00Z,13:00,190174,3169.57,576,yes,yes,8,191195.0,3186.6,1.0,yes,186.0,17.0,0.54,3169.6,3169.6,0.0,
+2026-10-11T11:01Z,13:01,204958,3415.97,664,yes,yes,9,203537.0,3392.3,1.0,yes,217.0,-23.7,-0.69,3416.0,3416.0,0.0,
+2026-10-11T11:02Z,13:02,195549,3259.15,576,yes,yes,8,194449.0,3240.8,1.0,yes,180.0,-18.3,-0.56,3259.2,3259.2,0.0,
+2026-10-11T11:03Z,13:03,201421,3357.02,630,yes,yes,8,402750.0,6712.5,2.0,no,186.0,,,3357.0,3357.0,-0.0,"start of our lumped recount row: 2 min 11:03-11:04Z, ours 402750 tx vs Pulse 401379 tx over the same minutes, diff +1371 (+0.34%)"
+2026-10-11T11:04Z,13:04,199958,3332.63,615,yes,yes,8,200910.0,3348.5,2.0,no,185.0,,,3332.6,3332.6,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:05Z,13:05,197359,3289.32,594,yes,yes,8,196790.0,3279.8,1.0,yes,196.0,-9.5,-0.29,3289.3,3289.3,-0.0,
+2026-10-11T11:06Z,13:06,200765,3346.08,601,yes,yes,8,201374.0,3356.2,1.0,yes,171.0,10.1,0.3,,3346.1,0.0,
+2026-10-11T11:07Z,13:07,196581,3276.35,614,yes,yes,9,197179.0,3286.3,1.0,yes,201.0,10.0,0.3,,3276.3,-0.0,
+2026-10-11T11:08Z,13:08,174332,2905.53,538,yes,yes,8,885256.0,14754.3,18.0,no,,,,,2905.5,-0.0,"start of our lumped recount row: 18 min 11:08-11:25Z, ours 885256 tx vs Pulse 2273603 tx over the same minutes, diff -1388347 (-61.06%)"
+2026-10-11T11:09Z,13:09,122953,2049.22,454,yes,yes,8,,,18.0,no,,,,,2049.2,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:10Z,13:10,108076,1801.27,440,yes,yes,7,,,18.0,no,,,,,1801.3,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:11Z,13:11,119479,1991.32,458,yes,yes,7,,,18.0,no,,,,,1991.3,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:12Z,13:12,101408,1690.13,438,yes,yes,7,,,18.0,no,,,,,1690.1,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:13Z,13:13,119734,1995.57,463,yes,yes,7,,,18.0,no,,,,,1995.6,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:14Z,13:14,115565,1926.08,449,yes,yes,8,,,18.0,no,,,,,1926.1,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:15Z,13:15,124922,2082.03,489,yes,yes,6,,,18.0,no,,,,,2082.0,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:16Z,13:16,111507,1858.45,424,yes,yes,6,,,18.0,no,,,,,1858.5,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:17Z,13:17,119153,1985.88,481,yes,yes,7,,,18.0,no,,,,,1985.9,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:18Z,13:18,119765,1996.08,460,yes,yes,7,,,18.0,no,,,,,1996.1,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:19Z,13:19,118304,1971.73,490,yes,yes,7,,,18.0,no,,,,,1971.7,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:20Z,13:20,114873,1914.55,444,yes,yes,7,,,18.0,no,,,,1914.5,1914.5,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:21Z,13:21,121550,2025.83,489,yes,yes,7,,,18.0,no,,,,2025.8,2025.8,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:22Z,13:22,121723,2028.72,474,yes,yes,7,,,18.0,no,,,,2028.7,2028.7,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:23Z,13:23,122363,2039.38,467,yes,yes,7,,,18.0,no,,,,2039.4,2039.4,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:24Z,13:24,169215,2820.25,493,yes,yes,8,,,18.0,no,,,,2820.3,2820.3,0.1,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:25Z,13:25,168681,2811.35,469,yes,yes,7,,,18.0,no,,,,2811.3,2811.3,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:26Z,13:26,169819,2830.32,654,yes,yes,8,852583.0,14209.7,1.0,no,172.0,,,2830.3,2830.3,-0.0,"our one-minute row has 1672 chain blocks (previous boundary block off the final chain, so it carries earlier minutes); not comparable"
+2026-10-11T11:27Z,13:27,182497,3041.62,637,yes,yes,8,889179.0,14819.6,1.0,no,207.0,,,3041.6,3041.6,-0.0,"our one-minute row has 1243 chain blocks (previous boundary block off the final chain, so it carries earlier minutes); not comparable"
+2026-10-11T11:28Z,13:28,218756,3645.93,694,yes,yes,8,214983.0,3583.1,1.0,yes,221.0,-62.8,-1.72,3645.9,3645.9,-0.0,
+2026-10-11T11:29Z,13:29,204720,3412.0,662,yes,yes,8,205385.0,3423.1,1.0,yes,219.0,11.1,0.33,3412.0,3412.0,0.0,
+2026-10-11T11:30Z,13:30,209134,3485.57,656,yes,yes,8,209134.0,3485.6,1.0,yes,215.0,0.0,0.0,3485.6,3485.6,0.0,
+2026-10-11T11:31Z,13:31,209928,3498.8,663,yes,yes,8,209928.0,3498.8,1.0,yes,206.0,0.0,0.0,3498.8,3498.8,0.0,
+2026-10-11T11:32Z,13:32,206748,3445.8,662,yes,yes,8,205957.0,3432.6,1.0,yes,214.0,-13.2,-0.38,3445.8,3445.8,0.0,
+2026-10-11T11:33Z,13:33,205204,3420.07,681,yes,yes,8,205995.0,3433.2,1.0,yes,198.0,13.1,0.38,3420.1,3420.1,0.0,
+2026-10-11T11:34Z,13:34,192621,3210.35,588,yes,yes,8,193118.0,3218.6,1.0,yes,197.0,8.2,0.26,3210.3,3210.3,-0.0,
+2026-10-11T11:35Z,13:35,205943,3432.38,634,yes,yes,8,205446.0,3424.1,1.0,yes,189.0,-8.3,-0.24,3432.4,3432.4,0.0,
+2026-10-11T11:36Z,13:36,201450,3357.5,657,yes,yes,8,202250.0,3370.8,1.0,yes,216.0,13.3,0.4,3357.5,3357.5,0.0,
+2026-10-11T11:37Z,13:37,206589,3443.15,643,yes,yes,8,204947.0,3415.8,1.0,yes,219.0,-27.3,-0.79,3443.2,3443.2,0.0,
+2026-10-11T11:38Z,13:38,210244,3504.07,661,yes,yes,8,211834.0,3530.6,1.0,yes,200.0,26.5,0.76,3504.1,3504.1,0.0,
+2026-10-11T11:39Z,13:39,204658,3410.97,627,yes,yes,9,410530.0,6842.2,2.0,no,196.0,,,3411.0,3411.0,0.0,"start of our lumped recount row: 2 min 11:39-11:40Z, ours 410530 tx vs Pulse 410819 tx over the same minutes, diff -289 (-0.07%)"
+2026-10-11T11:40Z,13:40,206161,3436.02,687,yes,yes,8,205854.0,3430.9,2.0,no,232.0,,,3436.0,3436.0,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:41Z,13:41,199369,3322.82,624,yes,yes,8,198910.0,3315.2,1.0,yes,217.0,-7.6,-0.23,3322.8,3322.8,-0.0,
+2026-10-11T11:42Z,13:42,204855,3414.25,646,yes,yes,8,204855.0,3414.2,1.0,yes,198.0,-0.1,-0.0,3414.3,3414.3,0.1,
+2026-10-11T11:43Z,13:43,209143,3485.72,686,yes,yes,9,209921.0,3498.7,1.0,yes,236.0,13.0,0.37,3485.7,3485.7,-0.0,
+2026-10-11T11:44Z,13:44,203709,3395.15,625,yes,yes,8,411230.0,6853.8,2.0,no,223.0,,,3395.2,3395.2,0.0,"start of our lumped recount row: 2 min 11:44-11:45Z, ours 411230 tx vs Pulse 412415 tx over the same minutes, diff -1185 (-0.29%)"
+2026-10-11T11:45Z,13:45,208706,3478.43,610,yes,yes,7,208299.0,3471.7,2.0,no,231.0,,,3478.4,3478.4,-0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:46Z,13:46,205854,3430.9,637,yes,yes,8,423658.0,7061.0,2.0,no,227.0,,,3430.9,3430.9,0.0,"start of our lumped recount row: 2 min 11:46-11:47Z, ours 423658 tx vs Pulse 423251 tx over the same minutes, diff +407 (+0.10%)"
+2026-10-11T11:47Z,13:47,217397,3623.28,712,yes,yes,8,216372.0,3606.2,2.0,no,225.0,,,3623.3,3623.3,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T11:48Z,13:48,209002,3483.37,669,yes,yes,9,209726.0,3495.4,1.0,yes,223.0,12.0,0.35,3483.4,3483.4,0.0,
+2026-10-11T11:49Z,13:49,209601,3493.35,684,yes,yes,8,208877.0,3481.3,1.0,yes,216.0,-12.0,-0.34,3493.3,3493.3,-0.0,
+2026-10-11T11:50Z,13:50,213398,3556.63,669,yes,yes,8,213398.0,3556.6,1.0,yes,249.0,-0.0,-0.0,3556.6,3556.6,-0.0,
+2026-10-11T11:51Z,13:51,207205,3453.42,684,yes,yes,8,207866.0,3464.4,1.0,yes,224.0,11.0,0.32,3453.4,3453.4,-0.0,
+2026-10-11T11:52Z,13:52,204941,3415.68,647,yes,yes,8,205915.0,3431.9,1.0,yes,221.0,16.2,0.47,3415.7,3415.7,0.0,
+2026-10-11T11:53Z,13:53,210425,3507.08,690,yes,yes,8,209843.0,3497.4,1.0,yes,234.0,-9.7,-0.28,3507.1,3507.1,0.0,
+2026-10-11T11:54Z,13:54,206330,3438.83,648,yes,yes,8,207214.0,3453.6,1.0,yes,221.0,14.8,0.43,3438.8,3438.8,-0.0,
+2026-10-11T11:55Z,13:55,196285,3271.42,632,yes,yes,9,194829.0,3247.2,1.0,yes,202.0,-24.2,-0.74,3271.4,3271.4,-0.0,
+2026-10-11T11:56Z,13:56,192945,3215.75,599,yes,yes,8,192855.0,3214.2,1.0,yes,203.0,-1.6,-0.05,3215.8,3215.8,0.1,
+2026-10-11T11:57Z,13:57,189100,3151.67,615,yes,yes,8,188709.0,3145.2,1.0,yes,204.0,-6.5,-0.21,3151.7,3151.7,0.0,
+2026-10-11T11:58Z,13:58,197376,3289.6,659,yes,yes,8,199562.0,3326.0,1.0,yes,186.0,36.4,1.11,3289.6,3289.6,0.0,
+2026-10-11T11:59Z,13:59,185705,3095.08,656,yes,yes,8,185438.0,3090.6,1.0,yes,211.0,-4.5,-0.14,3095.1,3095.1,0.0,
+2026-10-11T12:00Z,14:00,198397,3306.62,656,yes,yes,8,197656.0,3294.3,1.0,yes,214.0,-12.3,-0.37,3306.6,3306.6,-0.0,
+2026-10-11T12:01Z,14:01,195043,3250.72,635,yes,yes,8,196101.0,3268.3,1.0,yes,222.0,17.6,0.54,3250.7,3250.7,-0.0,
+2026-10-11T12:02Z,14:02,185038,3083.97,615,yes,yes,8,184628.0,3077.1,1.0,yes,210.0,-6.9,-0.22,3084.0,3084.0,0.0,
+2026-10-11T12:03Z,14:03,188916,3148.6,630,yes,yes,8,188637.0,3143.9,1.0,yes,208.0,-4.7,-0.15,3148.6,3148.6,0.0,
+2026-10-11T12:04Z,14:04,192942,3215.7,619,yes,yes,8,395524.0,6592.1,2.0,no,203.0,,,3215.7,3215.7,0.0,"start of our lumped recount row: 2 min 12:04-12:05Z, ours 395524 tx vs Pulse 395346 tx over the same minutes, diff +178 (+0.05%)"
+2026-10-11T12:05Z,14:05,202404,3373.4,687,yes,yes,8,202133.0,3368.9,2.0,no,236.0,,,3373.4,3373.4,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T12:06Z,14:06,194396,3239.93,623,yes,yes,8,193364.0,3222.7,1.0,yes,201.0,-17.2,-0.53,3239.9,3239.9,-0.0,
+2026-10-11T12:07Z,14:07,174435,2907.25,606,yes,yes,8,175398.0,2923.3,1.0,yes,178.0,16.1,0.55,2907.3,2907.3,0.1,
+2026-10-11T12:08Z,14:08,188792,3146.53,614,yes,yes,8,191331.0,3188.8,1.0,yes,224.0,42.3,1.34,3146.5,3146.5,-0.0,
+2026-10-11T12:09Z,14:09,195527,3258.78,634,yes,yes,8,192940.0,3215.7,1.0,yes,193.0,-43.1,-1.32,3258.8,3258.8,0.0,
+2026-10-11T12:10Z,14:10,172811,2880.18,584,yes,yes,9,330898.0,5515.0,2.0,no,189.0,,,2880.2,2880.2,0.0,"start of our lumped recount row: 2 min 12:10-12:11Z, ours 330898 tx vs Pulse 331301 tx over the same minutes, diff -403 (-0.12%)"
+2026-10-11T12:11Z,14:11,158490,2641.5,644,yes,yes,8,158580.0,2643.0,2.0,no,196.0,,,2641.5,2641.5,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T12:12Z,14:12,151036,2517.27,621,yes,yes,8,150496.0,2508.3,1.0,yes,184.0,-9.0,-0.36,,,,
+2026-10-11T12:13Z,14:13,165955,2765.92,604,yes,yes,8,288733.0,4812.2,1.0,no,210.0,,,,,,"our one-minute row has 443 chain blocks (previous boundary block off the final chain, so it carries earlier minutes); not comparable"
+2026-10-11T12:14Z,14:14,171503,2858.38,617,yes,yes,8,210575.0,3509.6,2.0,no,49.0,,,,,,"start of our lumped recount row: 2 min 12:14-12:15Z, ours 210575 tx vs Pulse 334018 tx over the same minutes, diff -123443 (-36.96%)"
+2026-10-11T12:15Z,14:15,162515,2708.58,596,yes,yes,9,161718.0,2695.3,2.0,no,178.0,,,2708.6,2708.6,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T12:16Z,14:16,167470,2791.17,632,yes,yes,8,167872.0,2797.9,1.0,yes,202.0,6.7,0.24,2791.2,2791.2,0.0,
+2026-10-11T12:17Z,14:17,174013,2900.22,584,yes,yes,8,175193.0,2919.9,1.0,yes,163.0,19.7,0.68,2900.2,2900.2,-0.0,
+2026-10-11T12:18Z,14:18,171038,2850.63,630,yes,yes,8,171512.0,2858.5,1.0,yes,183.0,7.9,0.28,2850.6,2850.6,-0.0,
+2026-10-11T12:19Z,14:19,172789,2879.82,597,yes,yes,8,172277.0,2871.3,1.0,yes,196.0,-8.5,-0.3,2879.8,2879.8,-0.0,
+2026-10-11T12:20Z,14:20,160323,2672.05,596,yes,yes,8,160700.0,2678.3,1.0,yes,198.0,6.2,0.23,2672.1,2672.1,0.0,
+2026-10-11T12:21Z,14:21,161503,2691.72,581,yes,yes,8,163054.0,2717.6,1.0,yes,180.0,25.9,0.96,2691.7,2691.7,-0.0,
+2026-10-11T12:22Z,14:22,163408,2723.47,579,yes,yes,8,160615.0,2676.9,1.0,yes,184.0,-46.6,-1.71,2723.5,2723.5,0.0,
+2026-10-11T12:23Z,14:23,150407,2506.78,594,yes,yes,8,318769.0,5312.8,2.0,no,209.0,,,2506.8,2506.8,0.0,"start of our lumped recount row: 2 min 12:23-12:24Z, ours 318769 tx vs Pulse 317276 tx over the same minutes, diff +1493 (+0.47%)"
+2026-10-11T12:24Z,14:24,166869,2781.15,616,yes,yes,8,167051.0,2784.2,2.0,no,187.0,,,2781.2,2781.2,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T12:25Z,14:25,166608,2776.8,603,yes,yes,8,166031.0,2767.2,1.0,yes,197.0,-9.6,-0.35,2776.8,2776.8,0.0,
+2026-10-11T12:26Z,14:26,161102,2685.03,608,yes,yes,8,160866.0,2681.1,1.0,yes,188.0,-3.9,-0.15,2685.0,2685.0,-0.0,
+2026-10-11T12:27Z,14:27,171280,2854.67,574,yes,yes,9,173570.0,2892.8,1.0,yes,176.0,38.1,1.34,2854.7,2854.7,0.0,
+2026-10-11T12:28Z,14:28,172616,2876.93,656,yes,yes,9,168544.0,2809.1,1.0,yes,220.0,-67.8,-2.36,2876.9,2876.9,-0.0,
+2026-10-11T12:29Z,14:29,171953,2865.88,604,yes,yes,8,171695.0,2861.6,1.0,yes,202.0,-4.3,-0.15,2865.9,2865.9,0.0,
+2026-10-11T12:30Z,14:30,104413,1740.22,574,yes,yes,8,105094.0,1751.6,1.0,yes,192.0,11.4,0.65,1740.2,1740.2,-0.0,
+2026-10-11T12:31Z,14:31,100554,1675.9,603,yes,yes,7,200971.0,3349.5,2.0,no,208.0,,,1675.9,1675.9,0.0,"start of our lumped recount row: 2 min 12:31-12:32Z, ours 200971 tx vs Pulse 201628 tx over the same minutes, diff -657 (-0.33%)"
+2026-10-11T12:32Z,14:32,101074,1684.57,576,yes,yes,7,100417.0,1673.6,2.0,no,169.0,,,1684.6,1684.6,0.0,inside a lumped recount row (see the row where the span starts)
+2026-10-11T12:33Z,14:33,7418,123.63,499,yes,yes,7,8075.0,134.6,1.0,no,38.0,,,123.6,123.6,-0.0,"not a headline minute on our side; halt 12:33:01Z; Pulse rows end 12:44Z, his 300-minute window ends 12:29Z"

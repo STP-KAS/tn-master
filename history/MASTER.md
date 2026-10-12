@@ -4,7 +4,7 @@
 
 > Moved here from [tn10-storm-2026-10-10/history/MASTER.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/history/MASTER.md) on 11 Oct 2026; storm repos were renamed the same day to `tn10-storm-YYYY-MM-DD` ([RENAME-LOG](../repos/RENAME-LOG.md)). [tn-master](../README.md)
 
-Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax)), for the questions and the outside count from 4 Oct on ([credits](../credits/KASPA-PULSE.md)).
+Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)), for the questions and the outside count from 4 Oct on ([credits](../credits/KASPA-PULSE.md)).
 
 One file, oldest first. Each run: date, setup, peak numbers, what broke, what we learned. Clocks are UTC. Older repos often wrote CEST; times here were converted.
 

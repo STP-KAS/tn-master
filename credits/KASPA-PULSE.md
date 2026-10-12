@@ -1,10 +1,10 @@
 > **Experimental. We are just trying this.** [Disclaimer](../DISCLAIMER.md) · [tn-master](../README.md)
 
-# Credits: Kaspa Pulse ([@gokugalax](https://x.com/gokugalax))
+# Credits: Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com))
 
 **Thank you, Kaspa Pulse.** Much of what these storms became is his: the node-dead rule, the chain count right after END, the "accepted in blocks" counter (two independent nodes, per UTC minute, by block time), the ~56 tx/s base-load figure, the questions that set our goals, the method (plan first, fixed steps, per-second UTC logs, raw data next to the summary), and an independent count of our runs on his own nodes. He is happy to be public with credit; please credit him when you reuse any of it.
 
-Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax)), for the guidance and the input from 4 Oct 2026 on. He stays out of the setup. He counts what the chain accepted, on his own two nodes, and sends us the comparison first. The 7 Oct wording stays: sign-and-send processes are **senders**, **runner** is the setup, **bot** is reserved for the operator.
+Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)), for the guidance and the input from 4 Oct 2026 on. He stays out of the setup. He counts what the chain accepted, on his own two nodes, and sends us the comparison first. The 7 Oct wording stays: sign-and-send processes are **senders**, **runner** is the setup, **bot** is reserved for the operator.
 
 All of his inputs came by X DM. Below: every input, where it is recorded, and what we changed because of it.
 
@@ -29,11 +29,14 @@ All of his inputs came by X DM. Below: every input, where it is recorded, and wh
 | 15 | 10 Oct | **The mining address in the plan produced blocks only 21:27–21:31Z; send the actual payout address privately** so he can show mining share per step | [notes, point 2](kaspa-pulse/2026-10-09-night/tn10-2026-10-09-2125-0535-notes.txt) | A to-do for stp, privately. **No payout address goes in this repo.** |
 | 16 | 10 Oct | **Give T0 a few hours ahead, and he counts again** | today's message (below) | A to-do for stp: T0 and a suggested window are in [go/README.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/go/README.md#key-times). The bots do not send it. |
 | 17 | 10 Oct | Mempool numbers disagree between nodes after 01:30Z (about 2,880 vs about 200), so he uses none for conclusions | [notes, "Limits of this count"](kaspa-pulse/2026-10-09-night/tn10-2026-10-09-2125-0535-notes.txt) | Mempool is logged per node and labelled as that node's view. |
-| 18 | 11 Oct | **He counts the 11 Oct run from the chain once it is done, 07:30 to 12:30 UTC, same method as the night of 9-10 Oct** | stp, 11 Oct 12:34 CEST | His count is the independent reference for 11 Oct; [our headline](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md) will be set next to it. **Pending.** |
+| 18 | 11 Oct | **He counts the 11 Oct run from the chain once it is done, 07:30 to 12:30 UTC, same method as the night of 9-10 Oct** | stp, 11 Oct 12:34 CEST | His count is the independent reference for 11 Oct; [our headline](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md) is set next to it: mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2M accepted ([kaspa-pulse/2026-10-11/](kaspa-pulse/2026-10-11/README.md)). Published with his OK, 12 Oct. |
 | 19 | 11 Oct | **Add his counter to the METRICS table: "accepted in blocks, two independent nodes, per UTC minute, by block time"** | stp, 11 Oct 12:34 CEST | Row in [METRICS.md](../METRICS.md). The bot logged his method live from **10:48 UTC** on 11 Oct ([pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv)). |
 | 20 | 11 Oct | **Say once that every network count includes base load, about 56 tx/s on TN10** | stp, 11 Oct 12:34 CEST | Said in [METRICS.md](../METRICS.md) and every headline table here and in tn10-storm-2026-10-11. Older pages keep the 55 tx/s measured on 9-10 Oct, with a note. |
 | 21 | 11 Oct | **"Your 'why' text is good, I wouldn't change it."** And: send him the lines that quote him before tn-master goes live | stp, 11 Oct 12:34 CEST | The lines were prepared for stp to forward. stp then chose (11 Oct, 15:01 CEST) to publish tn-master with every line about Kaspa Pulse in full. |
 | 22 | 11 Oct | **Full notes on the plan tonight** | stp, 11 Oct 12:34 CEST | Awaited; they will be added here. |
+| 23 | 12 Oct | **His counts of 10-11 Oct night (32.3M accepted, best minute 2,785 at 21:20Z) and 11 Oct (mean 2,844, median 3,055, best minute 3,646 at 11:28Z, 51.2M)**, made public with credit | stp, relaying his OK, 12 Oct | Headline rows in tn-master README, FINDINGS 10, both storm READMEs; files in [kaspa-pulse/2026-10-11/](https://github.com/STP-KAS/tn-master/blob/main/credits/kaspa-pulse/2026-10-11/README.md) and [tn10-storm-2026-10-10 credits/kaspa-pulse/2026-10-10-night/](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/credits/kaspa-pulse/2026-10-10-night/README.md). |
+| 24 | 12 Oct | **Dip analysis, 11 Oct:** larger dips line up with our mining address going to zero blocks (block rate ~7.5-8/s); 09:15-09:29Z is a sender-side dip (blocks ~10.5/s, tx ~1,650 tx/s) | his count of 11 Oct | Credited in tn-master FINDINGS 17 / ADVICE 17 and tn10-storm-2026-10-11 COMBINED "Dips"; our log check added there. |
+| 25 | 12 Oct | **Tile vs per-minute count; say which bucketing a minute uses; method header for each CSV** | his notes | METRICS "Dashboard tile vs per-minute count" now gives 3,708 tile vs his 3,646 best minute, and his 3,646 vs our block-time 3,645.9 vs our receive-time 3,583.1; method sidecars next to every per-minute CSV. |
 
 ## Where his inputs live in tn-master
 
@@ -50,7 +53,7 @@ Published with stp's go-ahead (11 Oct, 15:22 CEST). Also on the [11 Oct storm pa
 
 1. A live mirror of his counting method (accepted in blocks, two independent nodes, per UTC minute by accepting chain block time) ran on the bot side from 10:48Z. Highest minute: 11:28Z at 3,645.9 tx/s on both nodes. Median 3,209.4 tx/s (public node, 101 minutes) and 3,225.3 tx/s (n2, 87 minutes), 0 disagreements between the nodes. Data: [pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv).
 2. Every network count includes TN10 base load of about 56 tx/s (figure from Kaspa Pulse).
-3. His outside count for 07:30-12:33Z: **pending** (input 18), to be set next to our chain-count median 3,107.1 and peak 3,583.1 tx/s.
+3. His outside count, 07:30-12:30Z (300 full minutes): mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2 million accepted, 163 minutes above 3,000; next to our chain-count median 3,107.1 and peak 3,583.1 tx/s (input 18).
 4. The chain count right after END, before pruning, is his fix. It is what made the 11 Oct headline possible despite n2's freeze 11:08-11:25Z.
 
 ## His message, 10 Oct 2026

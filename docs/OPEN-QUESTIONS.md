@@ -2,7 +2,7 @@
 
 # Open questions (needs more testing)
 
-1. Does Kaspa Pulse's independent count of 11 Oct (07:30-12:30 UTC) match our chain count? **Pending** (his count; [credits](../credits/KASPA-PULSE.md)).
+1. Does Kaspa Pulse's independent count of 11 Oct (07:30-12:30 UTC) match our chain count? **Answered:** yes, within 0.1% over the run (his 51.2M over 300 minutes vs our 51.5M over 303; [credits](../credits/KASPA-PULSE.md)).
 2. Build's 11 Oct results: **pending**.
 3. Why do mass sender stalls follow box pauses? **Not sure / open for debate.**
 4. Can the network hold the 11 Oct peak minute (3,583.1 tx/s) for an hour? The mean was 2,833.1; the mass-ceiling estimate is 3,040-3,080.

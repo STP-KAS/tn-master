@@ -4,7 +4,7 @@
 
 TN10 storms are load tests we ran on Kaspa's Testnet-10 from 18 Sep to 11 Oct 2026: many senders pushing simple transactions at public and private nodes, then counting what the chain actually accepted. This repo holds no raw data. It links into each storm repo.
 
-> ## Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax))
+> ## Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com))
 >
 > Since 4 Oct 2026 Kaspa Pulse has counted our storms from the outside, on his own two nodes, and he shaped how we run and count them. These pages rest on his work:
 >
@@ -32,8 +32,8 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 | 8 Oct, checkout | 2,191 submit / 2,143 accept tx/s | Submit / local accept | [tn10-storm-2026-10-08](https://github.com/STP-KAS/tn10-storm-2026-10-08) |
 | 9 Oct day, keel | max 2,435, avg 1,627 tx/s unique accepted | Network unique | [tn10-storm-2026-10-09](https://github.com/STP-KAS/tn10-storm-2026-10-09) |
 | 9-10 Oct night | 7,541,103 in blocks; peak minute 1,223 tx/s | **Kaspa Pulse, accepted in blocks** | [tn10-storm-2026-10-09](https://github.com/STP-KAS/tn10-storm-2026-10-09) |
-| 10-11 Oct (Sat 18:10 - Sun 02:35 UTC) | MAX step median 2,642.4 tx/s (n=9; corrected 11 Oct, was 2,644.9); (Kaspa Pulse's independent count: pending his review) | Network unique (headline) | [tn10-storm-2026-10-10](https://github.com/STP-KAS/tn10-storm-2026-10-10) |
-| **11 Oct** (Sun 07:30-12:33 UTC) | **peak complete minute 3,583.1 (11:28Z); mean 2,833.1; median 3,107.1** (07:30-12:33Z); (Kaspa Pulse's independent count: pending his review) | **Network unique (headline)**; Kaspa Pulse method live as cross-check | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) |
+| 10-11 Oct (Sat 18:10 - Sun 02:35 UTC) | MAX step median 2,642.4 tx/s (n=9; corrected 11 Oct, was 2,644.9); Kaspa Pulse: 32.3M accepted, best minute 2,785 (21:20Z), 18:10-02:35Z | Network unique (headline) | [tn10-storm-2026-10-10](https://github.com/STP-KAS/tn10-storm-2026-10-10) |
+| **11 Oct** (Sun 07:30-12:33 UTC) | **peak complete minute 3,583.1 (11:28Z); mean 2,833.1; median 3,107.1** (07:30-12:33Z); Kaspa Pulse: mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2M accepted (07:30-12:30Z) | **Network unique (headline)**; Kaspa Pulse method live as cross-check | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) |
 
 **11 Oct in one line:** network unique accepted, 07:30-12:33Z (303 minutes, halted early by stp: taking a break, other things on the agenda), about 51.5 million unique transactions; peak complete minute **3,583.1 tx/s** at 11:28Z, mean **2,833.1**, median **3,107.1** over 171 strict single minutes; includes about 56 tx/s base load. Build's results: pending. Source: [logs/bot/SUMMARY.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md), [logs/COMBINED.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/COMBINED.md).
 

@@ -29,4 +29,4 @@ Give developers, core and contributors a long window on TN10 to operate under **
 - **Counting.** After END, the **chain count** from our own node, per UTC minute, before pruning (Kaspa Pulse's fix). The headline is **network unique accepted tx/s**: each transaction id once, when the virtual chain accepts it. Kaspa Pulse counts each run independently with **accepted in blocks, two independent nodes, per UTC minute, by block time**; from 11 Oct we also log his method live. Every network count includes about 56 tx/s base load (Kaspa Pulse).
 - **Publishing.** Raw CSVs in each storm repo's `logs/`, a COMBINED.md and a WRITE-UP.md; counts only, leak-scanned.
 
-Thanks to Kaspa Pulse ([@gokugalax](https://x.com/gokugalax)) for the method: [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md).
+Thanks to Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)) for the method: [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md).

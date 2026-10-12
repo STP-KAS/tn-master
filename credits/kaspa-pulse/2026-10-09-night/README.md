@@ -2,7 +2,7 @@
 
 # Kaspa Pulse's night count, 9–10 Oct 2026, 21:25–05:35 UTC
 
-These files are Kaspa Pulse's ([@gokugalax](https://x.com/gokugalax)) own private count of our Friday night run, shared with stp on 10 Oct 2026. His notes said: "Private. Nothing public before you say yes." Kaspa Pulse has since said yes, so these files are public here. Credit him when you reuse them.
+These files are the private count of Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)) of our Friday night run, shared with stp on 10 Oct 2026. His notes said: "Private. Nothing public before you say yes." Kaspa Pulse has since said yes, so these files are public here. Credit him when you reuse them.
 
 | File | What |
 |---|---|

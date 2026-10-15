@@ -10,7 +10,7 @@ TN10 storms are load tests we ran on Kaspa's Testnet-10 from 18 Sep to 11 Oct 20
 >
 > - **The node-dead rule.** A sender stops when its node is dead (RPC failing, not synced, lag over 60 s, or DAA still for 30 s); a failed submit is a reject, never "sent". He spotted our senders firing at a dead node on 9-10 Oct.
 > - **The chain count right after END,** on non-archival nodes, before pruning removes the blocks. Every storm since 10 Oct has a COUNT step because of him.
-> - **The "accepted in blocks" counter:** transactions accepted in blocks, two independent nodes, per UTC minute, by block time. It is the cross-check for every headline here ([METRICS.md](METRICS.md)).
+> - **The "accepted in blocks" counter:** independent counts by Kaspa Pulse — accepted in block counts on two external nodes, per UTC minute, by block time. It is the cross-check for every headline here ([METRICS.md](METRICS.md)).
 > - **The base-load figure:** TN10 carries about **56 tx/s** of base load. Every network count on these pages includes it.
 >
 > Every input he gave and what we changed: **[credits/KASPA-PULSE.md](credits/KASPA-PULSE.md)**.
@@ -35,7 +35,7 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 | 10-11 Oct (Sat 18:10 - Sun 02:35 UTC) | MAX step median 2,642.4 tx/s (n=9; corrected 11 Oct, was 2,644.9); Kaspa Pulse: 32.3M accepted, best minute 2,785 (21:20Z), 18:10-02:35Z | Network unique (headline) | [tn10-storm-2026-10-10](https://github.com/STP-KAS/tn10-storm-2026-10-10) |
 | **11 Oct** (Sun 07:30-12:33 UTC) | **peak complete minute 3,583.1 (11:28Z); mean 2,833.1; median 3,107.1** (07:30-12:33Z); Kaspa Pulse: mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2M accepted (07:30-12:30Z) | **Network unique (headline)**; Kaspa Pulse method live as cross-check | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) |
 
-**11 Oct in one line:** network unique accepted, 07:30-12:33Z (303 minutes, halted early by stp: taking a break, other things on the agenda), about 51.5 million unique transactions; peak complete minute **3,583.1 tx/s** at 11:28Z, mean **2,833.1**, median **3,107.1** over 171 strict single minutes; includes about 56 tx/s base load. Build's results: pending. Source: [logs/bot/SUMMARY.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md), [logs/COMBINED.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/COMBINED.md).
+**11 Oct in one line:** network unique accepted, 07:30-12:33Z (303 minutes, halted early by stp: taking a break, other things on the agenda), about 51.5 million unique transactions; peak complete minute **3,583.1 tx/s** at 11:28Z, mean **2,833.1**, median **3,107.1** over 171 strict single minutes; includes about 56 tx/s base load. Independent counts by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)): accepted in block counts on two external nodes, best minute 3,646, 51.2M accepted (07:30-12:30Z). Build's results: pending. Source: [logs/bot/SUMMARY.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md), [logs/COMBINED.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/COMBINED.md).
 
 **Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
 
@@ -72,4 +72,3 @@ tn-master/
 Counts only. No IP, host, port, key, seed, txid or wallet address on these pages. Public TN10 node names are allowed.
 
 ---
-

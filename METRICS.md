@@ -9,7 +9,7 @@
 | **Submitted** (submit-OK) | What senders handed to a node and the node acknowledged. Not inclusion. | Sender health only |
 | **Node-accepted / seen accepted** | What one sender saw land on one node's virtual chain | Per side, per node |
 | **Network unique accepted** (the headline) | Each transaction id counted once, when the virtual chain accepts it, for the whole network (all senders), from a chain count after the run | **Headline** |
-| **Accepted in blocks (Kaspa Pulse)** | Transactions accepted in blocks, **two independent nodes, per UTC minute, by block time**. Counted by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)) on his own nodes. | Independent cross-check |
+| **Accepted in blocks (Kaspa Pulse)** | Transactions accepted in blocks, **two independent nodes, per UTC minute, by block time**. Independent counts by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)) on two external nodes. | Independent cross-check |
 | **Processed** (kaspad log) | Block-body counter: a transaction once per block it sits in, so copies in parallel blocks count again | Overstates; never a headline |
 | **Dashboards** (Kaspa Stream, api-tn10) | Their own indexed counts over a socket, their own node's mempool | Lag and can freeze; never a headline |
 
@@ -17,7 +17,7 @@
 
 ## Kaspa Pulse's counter
 
-Kaspa Pulse counts each run after it ends, on his own two nodes, with **accepted in blocks, two independent nodes, per UTC minute, by block time** (11 Oct: 07:30 to 12:30 UTC). From 11 Oct the bot also logs his method live in [logs/bot/pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv), **live from 10:48 UTC (12:48 CEST); first full minute 10:49 UTC**, with the start time written at the top of the file. Earlier minutes come from the after-run chain count. Because it buckets by the accepting chain block's timestamp, its minutes differ slightly from the chain-count rows (11:28Z: 3,645.9 tx/s there vs 3,583.1 in the chain count). His own count of 11 Oct: mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2 million accepted, 07:30-12:30Z ([credits](credits/kaspa-pulse/2026-10-11/README.md)).
+Independent counts by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)): accepted in block counts on two external nodes, per UTC minute, by block time. From 11 Oct the bot also logs his method live in [logs/bot/pulse-method-minute.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/pulse-method-minute.csv), **live from 10:48 UTC (12:48 CEST); first full minute 10:49 UTC**, with the start time written at the top of the file. Earlier minutes come from the after-run chain count. Because it buckets by the accepting chain block's timestamp, its minutes differ slightly from the chain-count rows (11:28Z: 3,645.9 tx/s there vs 3,583.1 in the chain count). His own count of 11 Oct: mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2 million accepted, 07:30-12:30Z ([credits](credits/kaspa-pulse/2026-10-11/README.md)).
 
 ## Dashboard tile vs per-minute count
 
@@ -52,4 +52,4 @@ When submitted is above accepted, the excess sits in mempools. Mempools grow, fe
 | 2026-10-10 | "network unique accepted", median of complete minutes | chain count | **network unique (headline)** |
 | 2026-10-11 | the same as 10 Oct, plus **Kaspa Pulse's "accepted in blocks" live per UTC minute** (from 10:48Z) | network | **network unique (headline)**; Kaspa Pulse counter as cross-check |
 
-Source of the counters: [history/MASTER.md, "Counters are not the same"](history/MASTER.md#counters-are-not-the-same). Credit for the counter and the base-load figure: [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md).
+Source of the counters: [history/MASTER.md, "Counters are not the same"](history/MASTER.md#counters-are-not-the-same). Credit for the counter and the base-load figure: [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md). Independent counts by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)).

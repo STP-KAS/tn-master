@@ -155,3 +155,11 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **Stopped early by stp: taking a break, other things on the agenda** (HALT 12:33:01Z).
 - **Source:** [logs/bot/SUMMARY.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md), [logs/COMBINED.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/COMBINED.md), [logs/WRITE-UP.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/WRITE-UP.md), [chain-count.csv](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/chain-count.csv) (`headline_strict` rebuilds the peak and median).
 - **Learned:** one clock works; past the mass-ceiling estimate for single minutes, but the mean stays below it; the box's own pauses and RAM, not the network, now limit the bot side.
+
+## 29 Oct: covenant families in parallel ([tn10-storm-2026-10-29](https://github.com/STP-KAS/tn10-storm-2026-10-29))
+
+- **Setup:** Thu 29 Oct 19:00-20:00Z. Mini as main node and coordinator; desk and box senders; 1, then 2, then 4 covenant families, with gaps between steps.
+- **Reported (total hops/s):** 1 family **0.81**, 2 families **1.96**, 4 families **3.24** (about 4x with 4 chains). A single chain stays under 1 hop/s (20 Oct baseline ~0.7). Counting by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax)), independent measurement.
+- **What broke:** handoff copy from the mini failed, so step 1 ran on the mini sender only; box public lanes partial (19:24-19:33Z only, nothing in step 3); box clock about 0.9 s off.
+- **Next:** automatic handoff copy with senders gated on it; public-node senders to the desk; fix box and mini clocks; 4 families at a higher rate and 8 families, every sender live from the first second.
+- **Source:** [logs](https://github.com/STP-KAS/tn10-storm-2026-10-29/tree/main/logs/storm-2026-10-29), [REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md).

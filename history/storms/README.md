@@ -17,3 +17,4 @@
 | [2026-10-09](2026-10-09.md) | keel day and the Friday night storm |
 | [2026-10-10](2026-10-10.md) | The bot run and the build run; public-node test |
 | [2026-10-11](2026-10-11.md) | Flat-out run, one clock |
+| [2026-10-29](2026-10-29.md) | Covenant families in parallel (1, 2, 4) |

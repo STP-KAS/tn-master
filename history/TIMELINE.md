@@ -22,3 +22,4 @@
 | 9-10 Oct | Friday night storm; **Kaspa Pulse counts 7,541,103 in blocks**; senders fired at a dead node |
 | 10 Oct | Take 2 halted; node-dead rule and chain count after END adopted (Kaspa Pulse); bot run and build run from 18:30Z |
 | 11 Oct | Flat-out run on one clock: peak complete minute **3,583.1**, mean **2,833.1**, median **3,107.1** tx/s (07:30-12:33Z); Kaspa Pulse's method logged live from 10:48Z; repos renamed; tn-master starts |
+| 29 Oct | Covenant families in parallel: total hops/s **0.81 / 1.96 / 3.24** for 1 / 2 / 4 families (19:00-20:00Z); [review](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md) |

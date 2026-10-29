@@ -2,7 +2,7 @@
 
 # tn-master: every TN10 storm, one map
 
-TN10 storms are load tests we ran on Kaspa's Testnet-10 from 18 Sep to 11 Oct 2026: many senders pushing simple transactions at public and private nodes, then counting what the chain actually accepted. This repo holds no raw data. It links into each storm repo.
+TN10 storms are load tests we ran on Kaspa's Testnet-10 from 18 Sep to 29 Oct 2026: many senders pushing simple transactions at public and private nodes, then counting what the chain actually accepted. This repo holds no raw data. It links into each storm repo.
 
 > ## Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com))
 >

@@ -23,3 +23,4 @@
 | 10 Oct | Take 2 halted; node-dead rule and chain count after END adopted (Kaspa Pulse); bot run and build run from 18:30Z |
 | 11 Oct | Flat-out run on one clock: peak complete minute **3,583.1**, mean **2,833.1**, median **3,107.1** tx/s (07:30-12:33Z); Kaspa Pulse's method logged live from 10:48Z; repos renamed; tn-master starts |
 | 29 Oct | Covenant families in parallel: total hops/s **0.81 / 1.96 / 3.24** for 1 / 2 / 4 families (19:00-20:00Z); [review](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md) |
+| 7 Nov | Planned: covenant families 1, then 2, then 4, then 8. Desk sends, mini counts, 19:00-21:00 UTC (20:00-22:00 CET). Not started. [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07) |

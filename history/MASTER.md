@@ -1,6 +1,6 @@
 > **Experimental. We are just trying this.** [Disclaimer](../DISCLAIMER.md)
 
-# MASTER: every TN10 storm, mid Sep to 11 Oct 2026
+# MASTER: every TN10 storm, mid Sep 2026 to the planned 7 Nov storm
 
 > Moved here from [tn10-storm-2026-10-10/history/MASTER.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/history/MASTER.md) on 11 Oct 2026; storm repos were renamed the same day to `tn10-storm-YYYY-MM-DD` ([RENAME-LOG](../repos/RENAME-LOG.md)). [tn-master](../README.md)
 
@@ -41,6 +41,8 @@ Numbers from different eras are not directly comparable.
 | 10 Oct morning | Take 2 | locus + keel | Rehearsal row: 58 tx/s mean, clean | Submit | locus aborted 06:52 and 07:26; halted 08:06 |
 | **10 Oct, from T0** | **Bot run + Build run** ([times](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/go/README.md#key-times)) | **n2 (box) + Build's own desk node** | MAX median **2,642.4** tx/s (complete n=9; corrected 11 Oct); 3000 line **not met**; Build HOLD desk med **4,032** | Unique accepted | Disk freeze zeroed C1500; sdk210 delete; n2 utxoindex off; HOLD WS stalls; Build clock mismatch |
 | **11 Oct** | **Flat-out run, one clock** | **n2 (box) + Build's desk node** | Network unique accepted 07:30-12:33Z: peak complete minute **3,583.1** (11:28Z), mean **2,833.1**, median **3,107.1** | Unique accepted; Kaspa Pulse method live from 10:48Z | n2 froze 11:08-11:25Z; box pauses; mass sender stalls; halted early 12:33Z |
+| 29 Oct | Covenant families, 1 then 2 then 4 | Mini coordinates, desk and box send | total hops/s 0.81 / 1.96 / 3.24 | hops/s | handoff copy failed; box lanes partial |
+| 7 Nov (planned) | Covenant families, 1 then 2 then 4 then 8 | Desk sends, mini counts, 1.2 hop/s per family | not run | — | — |
 
 ## Mid September: first contact
 
@@ -163,3 +165,9 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **What broke:** handoff copy from the mini failed, so step 1 ran on the mini sender only; box public lanes partial (19:24-19:33Z only, nothing in step 3); box clock about 0.9 s off.
 - **Next:** automatic handoff copy with senders gated on it; public-node senders to the desk; fix box and mini clocks; 4 families at a higher rate and 8 families, every sender live from the first second.
 - **Source:** [logs](https://github.com/STP-KAS/tn10-storm-2026-10-29/tree/main/logs/storm-2026-10-29), [REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md).
+
+## 7 Nov: planned ([tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07))
+
+- **Setup:** Sat 7 Nov 19:00-21:00 UTC (20:00-22:00 CET). Desk sends. Mini counts. One rate, 1.2 hop/s per family. Steps of 15 minutes at 1, then 2, then 4, then 8 families if 4 is clean, then a 10-minute ramp. Sends finish at 20:30 UTC. The count stays up until 21:00 UTC.
+- **Reported:** not run.
+- **Source:** [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07). The rehearsal that set the rate is in [tn10-storm/desk-saturday](https://github.com/STP-KAS/tn10-storm/tree/main/desk-saturday).

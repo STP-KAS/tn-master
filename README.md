@@ -41,7 +41,7 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 
 **Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
 
-**8 Nov, the repair:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). Start test at 00:40 UTC, no submit. The counted rerun of the 7 Nov shape has no date locked. Sunday 19:00 UTC is an offer.
+**8 Nov, the repair:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). Full test of the failed shape, start 00:40 UTC, armed only by the two pastes. The official count waits for a date the outside count picks. Arming stays manual until further notice ([LESSONS](docs/LESSONS.md)).
 
 **Also a plan, no date:** [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43. Turn **43a** is stood down from Sunday 8 Nov. The 7 Nov window failed, so that clock is withdrawn. Sixteen families stays a later question. Turn **43b** has no date. We do not claim the result. The mint-rush plan above is a different question and stays its own map.
 

@@ -48,7 +48,8 @@ Renamed on 11 Oct 2026 to `tn10-storm-YYYY-MM-DD` (+ suffix). Old names redirect
 | 41 | [tn10-storm-2026-10-29](https://github.com/STP-KAS/tn10-storm-2026-10-29) | — | 2026-10-29 | RUN | public | Covenant families in parallel, Thu 29 Oct 19:00-20:00 UTC |  |
 | 42 | [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07) | — | 2026-11-07 | RUN (failed) | public | Covenant families 1, 2, 4, then 8, then one 32-family load. Sat 7 Nov 19:00-21:00 UTC. The window did not run. Pre-tests are in the repo and are not the window | sender was due at 19:00 UTC and did not start |
 | 43 | [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve) | — | no date. 43a stood down from 8 Nov | PLAN | public | Sixteen covenant families, then the same shape from the other machine. Not Sunday. The 7 Nov rerun comes first. We do not claim the result | keeps this name until a send actually starts |
-| 44 | [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) | — | test 2026-11-08 00:40 UTC. Counted date not locked | RUN (repair) | public | Record of the 7 Nov miss, a start test with no submit, and the same shape again once a date is locked | Sunday 19:00 UTC is an offer, not armed |
+| 44 | [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) | — | full test 2026-11-08 00:40 UTC. Official date not locked | RUN (repair) | public | Record of the 7 Nov miss, then a full test of that shape. Desk sends. Desk and mini count. Armed by paste only | the outside count picks the official date |
+| 45 | [tn10-storm-plan-16](https://github.com/STP-KAS/tn10-storm-plan-16) | — | after the 8 Nov test. No clock until a paste | PLAN | public | Sixteen covenant families, one 15-minute step, after the 8 Nov test has ended. Own paste. Not the official evening | renamed to `tn10-storm-YYYY-MM-DD` once a run date is set |
 
 ## Public clean copies (current files only, redacted; created 11 Oct 2026)
 

@@ -24,4 +24,4 @@
 | 11 Oct | Flat-out run on one clock: peak complete minute **3,583.1**, mean **2,833.1**, median **3,107.1** tx/s (07:30-12:33Z); Kaspa Pulse's method logged live from 10:48Z; repos renamed; tn-master starts |
 | 29 Oct | Covenant families in parallel: total hops/s **0.81 / 1.96 / 3.24** for 1 / 2 / 4 families (19:00-20:00Z); [review](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md) |
 | 7 Nov | Covenant families 1, then 2, then 4, then 8. The window failed. No genesis, no sends, no mini count, no load. Pre-tests stay published and are not that window. [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07). Record: [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). |
-| 8 Nov | Start test at 00:40 UTC. No submit. Counted rerun of the 7 Nov shape, date not locked. Offered Sunday 19:00 UTC if the outside count takes it. |
+| 8 Nov | Full test of the 7 Nov shape, start 00:40 UTC, desk sends, desk and mini count. Armed by paste only. Official date is the outside count's choice. [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) |

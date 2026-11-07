@@ -19,4 +19,4 @@
 | [2026-10-11](2026-10-11.md) | Flat-out run, one clock |
 | [2026-10-29](2026-10-29.md) | Covenant families in parallel (1, 2, 4) |
 | [2026-11-07](2026-11-07.md) | Covenant families, 1 then 2 then 4 then 8. Window failed. It did not run. |
-| [2026-11-08](2026-11-08.md) | Rerun of that shape. Start test 00:40 UTC. Counted date not locked. |
+| [2026-11-08](2026-11-08.md) | Full test of the failed shape, 00:40 UTC. Official date not locked. |

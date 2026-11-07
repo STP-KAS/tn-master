@@ -41,9 +41,9 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 
 **Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
 
-**8 Nov, the repair:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). Full test of the failed shape, start 00:40 UTC, armed only by the two pastes. The official count waits for a date the outside count picks. Arming stays manual until further notice ([LESSONS](docs/LESSONS.md)).
+**8 Nov, the test:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08), one plan [GO.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO.md). Start 00:40 UTC. Desk sends, Mini counts, bot watches. The failed shape, then the 32-family load, then sixteen families at 04:15 UTC. The official count waits for a date Pulse picks. [LESSONS](docs/LESSONS.md).
 
-**Sixteen families, one repo:** [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43. After the 8 Nov test, its own paste. Not the official evening. Turn **43b** has no date. We do not claim the result. The mint-rush plan above is a different question and stays its own map.
+**Sixteen families:** the question stays in [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43. Turn **43a** of this test is inside GO.md. Do not paste the curve sheets for it. Turn **43b** has no date. We do not claim the result. The mint-rush plan above is a different question and stays its own map.
 
 ## Map
 

@@ -42,7 +42,7 @@ Numbers from different eras are not directly comparable.
 | **10 Oct, from T0** | **Bot run + Build run** ([times](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/go/README.md#key-times)) | **n2 (box) + Build's own desk node** | MAX median **2,642.4** tx/s (complete n=9; corrected 11 Oct); 3000 line **not met**; Build HOLD desk med **4,032** | Unique accepted | Disk freeze zeroed C1500; sdk210 delete; n2 utxoindex off; HOLD WS stalls; Build clock mismatch |
 | **11 Oct** | **Flat-out run, one clock** | **n2 (box) + Build's desk node** | Network unique accepted 07:30-12:33Z: peak complete minute **3,583.1** (11:28Z), mean **2,833.1**, median **3,107.1** | Unique accepted; Kaspa Pulse method live from 10:48Z | n2 froze 11:08-11:25Z; box pauses; mass sender stalls; halted early 12:33Z |
 | 29 Oct | Covenant families, 1 then 2 then 4 | Mini coordinates, desk and box send | total hops/s 0.81 / 1.96 / 3.24 | hops/s | handoff copy failed; box lanes partial |
-| 7 Nov (planned) | Covenant families, 1 then 2 then 4 then 8 | Desk sends, mini counts, 1.2 hop/s per family | not run | — | — |
+| 7 Nov (failed) | Covenant families, 1 then 2 then 4 then 8 | Desk sends, mini counts, 1.2 hop/s per family | window did not run | the arm refused; the mini waited for a spoken word | [11-08 record](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
 
 ## Mid September: first contact
 
@@ -166,9 +166,9 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **Next:** automatic handoff copy with senders gated on it; public-node senders to the desk; fix box and mini clocks; 4 families at a higher rate and 8 families, every sender live from the first second.
 - **Source:** [logs](https://github.com/STP-KAS/tn10-storm-2026-10-29/tree/main/logs/storm-2026-10-29), [REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md).
 
-## 7 Nov: scheduled ([tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07))
+## 7 Nov: failed ([tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07))
 
 - **Setup:** Sat 7 Nov 19:00-21:00 UTC (20:00-22:00 CET). Desk sends. Mini counts. One rate, 1.2 hop/s per family. Steps of 15 minutes at 1, then 2, then 4, then 8 families if 4 is clean, then a 10-minute ramp. Sends finish at 20:30 UTC. The count stays up until 21:00 UTC. One 32-family load follows, 21:15-22:00 UTC.
-- **Reported:** the Saturday window is not run. Before it: 5 Nov holds cleared 1.14 at 4 and at 8 families; two 32-family loads (5 Nov 33.86/s total, slowest 1.037; night of 6 Nov 34.55/s total, slowest 1.047) stayed under 1.14 per family; two Friday passes of the Saturday shape were clean, slowest eight-family rate about 1.26/s. Those pre-tests are not the Saturday count.
+- **Reported:** the Saturday window did not run. No genesis, no sends, no mini count, no load. The arm refused at 18:50:01 UTC, `n=0`, in about a tenth of a second, after the eight hashes were already on GitHub. The mini sheet waited for a spoken word and the operator was out. Full record: [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/WHAT-WENT-WRONG.md). Before it: 5 Nov holds cleared 1.14 at 4 and at 8 families; two 32-family loads (5 Nov 33.86/s total, slowest 1.037; night of 6 Nov 34.55/s total, slowest 1.047) stayed under 1.14 per family; two Friday passes of the Saturday shape were clean, slowest eight-family rate about 1.26/s. Those pre-tests are not the Saturday count.
 - **Why:** the next shape after 29 Oct. One sender, on from the first second, eight families. The 32-family load is a third look at a band already measured twice, read next to the quiet ladder. [WHY.md](https://github.com/STP-KAS/tn10-storm-2026-11-07/blob/main/WHY.md).
 - **Source:** [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07). The rehearsal that set the rate is in [tn10-storm/desk-saturday](https://github.com/STP-KAS/tn10-storm/tree/main/desk-saturday). Page: [history/storms/2026-11-07.md](storms/2026-11-07.md).

@@ -18,4 +18,5 @@
 | [2026-10-10](2026-10-10.md) | The bot run and the build run; public-node test |
 | [2026-10-11](2026-10-11.md) | Flat-out run, one clock |
 | [2026-10-29](2026-10-29.md) | Covenant families in parallel (1, 2, 4) |
-| [2026-11-07](2026-11-07.md) | Covenant families, 1 then 2 then 4 then 8 (scheduled, window not started) |
+| [2026-11-07](2026-11-07.md) | Covenant families, 1 then 2 then 4 then 8. Window failed. It did not run. |
+| [2026-11-08](2026-11-08.md) | Rerun of that shape. Start test 00:40 UTC. Counted date not locked. |

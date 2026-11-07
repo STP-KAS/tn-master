@@ -41,7 +41,7 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 
 **Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
 
-**Also a plan, no date, not a run:** [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43, turns **43a** and **43b**. Sixteen covenant families at the same 1.2 offer, then the same shape from the other machine. Opinion from the tests already run. We do not claim the result. The mint-rush plan above is a different question and stays its own map. Not the 7 Nov window.
+**Also a plan, not tonight:** [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43. Turn **43a** is named for Sunday 8 Nov 2026, 18:15–18:30 UTC, sixteen covenant families at the same 1.2 offer, the mini counting. It is not armed. It waits until the 7 Nov load has finished. Turn **43b** has no date. Opinion from the tests already run. We do not claim the result. The mint-rush plan above is a different question and stays its own map.
 
 ## Map
 

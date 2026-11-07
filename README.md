@@ -41,6 +41,8 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 
 **Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
 
+**Also a plan, no date, not a run:** [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43, turns **43a** and **43b**. Sixteen covenant families at the same 1.2 offer, then the same shape from the other machine. Opinion from the tests already run. We do not claim the result. The mint-rush plan above is a different question and stays its own map. Not the 7 Nov window.
+
 ## Map
 
 ```
@@ -66,7 +68,7 @@ tn-master/
 | [history/TIMELINE.md](history/TIMELINE.md) | One line per day |
 | [history/storms/](history/storms/README.md) | One page per storm |
 | [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md) | Kaspa Pulse: every input and what we changed |
-| [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility (incl. the [mint-rush plan](https://github.com/STP-KAS/tn10-storm-plan-mint-rush)) |
+| [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility (incl. the [mint-rush plan](https://github.com/STP-KAS/tn10-storm-plan-mint-rush) and the [family-curve plan](https://github.com/STP-KAS/tn10-storm-plan-family-curve)) |
 | [repos/RENAME-LOG.md](repos/RENAME-LOG.md) | The 11 Oct 2026 renames |
 | [docs/LESSONS.md](docs/LESSONS.md) · [docs/OPEN-QUESTIONS.md](docs/OPEN-QUESTIONS.md) | Operations lessons; what still needs testing |
 | [tn10-lowio-1148-notes](https://github.com/STP-KAS/tn10-lowio-1148-notes) | Notes on rusty-kaspa PR #1148 (lowio preset): diff read, risks, A/B test (FINDINGS 18) |

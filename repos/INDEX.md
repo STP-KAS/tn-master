@@ -47,6 +47,7 @@ Renamed on 11 Oct 2026 to `tn10-storm-YYYY-MM-DD` (+ suffix). Old names redirect
 | 40 | [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush) | — | no date yet | PLAN | public | KCC-20 mint rush under storm load, auto-fee vs fixed-fee minters (plan, not a run) | renamed to `tn10-storm-YYYY-MM-DD` once a run date is set |
 | 41 | [tn10-storm-2026-10-29](https://github.com/STP-KAS/tn10-storm-2026-10-29) | — | 2026-10-29 | RUN | public | Covenant families in parallel, Thu 29 Oct 19:00-20:00 UTC |  |
 | 42 | [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07) | — | 2026-11-07 | RUN (scheduled) | public | Covenant families 1, 2, 4, then 8, then one 32-family load. Sat 7 Nov 19:00-21:00 UTC. Window not started. Pre-tests are in the repo and are not the window | sender starts at 19:00 UTC |
+| 43 | [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve) | — | no date yet | PLAN | public | Sixteen covenant families, then the same shape from the other machine. IDs 43a and 43b. Plan, not a run. We do not claim the result | renamed to `tn10-storm-YYYY-MM-DD` once a run date is set |
 
 ## Public clean copies (current files only, redacted; created 11 Oct 2026)
 

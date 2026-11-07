@@ -46,7 +46,7 @@ Renamed on 11 Oct 2026 to `tn10-storm-YYYY-MM-DD` (+ suffix). Old names redirect
 | 39 | [tn10-storm-2026-10-11-draft](https://github.com/STP-KAS/tn10-storm-2026-10-11-draft) | `tn10-run-2026-10-11` | 2026-10-11 | DUP (draft) | public, archived | Draft for 11 Oct, never run | archived |
 | 40 | [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush) | — | no date yet | PLAN | public | KCC-20 mint rush under storm load, auto-fee vs fixed-fee minters (plan, not a run) | renamed to `tn10-storm-YYYY-MM-DD` once a run date is set |
 | 41 | [tn10-storm-2026-10-29](https://github.com/STP-KAS/tn10-storm-2026-10-29) | — | 2026-10-29 | RUN | public | Covenant families in parallel, Thu 29 Oct 19:00-20:00 UTC |  |
-| 42 | [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07) | — | 2026-11-07 | RUN (scheduled) | public | Covenant families 1, 2, 4, then 8. Sat 7 Nov 19:00-21:00 UTC (20:00-22:00 CET). Not started | sender starts at 19:00 UTC |
+| 42 | [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07) | — | 2026-11-07 | RUN (scheduled) | public | Covenant families 1, 2, 4, then 8, then one 32-family load. Sat 7 Nov 19:00-21:00 UTC. Window not started. Pre-tests are in the repo and are not the window | sender starts at 19:00 UTC |
 
 ## Public clean copies (current files only, redacted; created 11 Oct 2026)
 

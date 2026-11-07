@@ -166,8 +166,9 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **Next:** automatic handoff copy with senders gated on it; public-node senders to the desk; fix box and mini clocks; 4 families at a higher rate and 8 families, every sender live from the first second.
 - **Source:** [logs](https://github.com/STP-KAS/tn10-storm-2026-10-29/tree/main/logs/storm-2026-10-29), [REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md).
 
-## 7 Nov: planned ([tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07))
+## 7 Nov: scheduled ([tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07))
 
-- **Setup:** Sat 7 Nov 19:00-21:00 UTC (20:00-22:00 CET). Desk sends. Mini counts. One rate, 1.2 hop/s per family. Steps of 15 minutes at 1, then 2, then 4, then 8 families if 4 is clean, then a 10-minute ramp. Sends finish at 20:30 UTC. The count stays up until 21:00 UTC.
-- **Reported:** not run.
-- **Source:** [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07). The rehearsal that set the rate is in [tn10-storm/desk-saturday](https://github.com/STP-KAS/tn10-storm/tree/main/desk-saturday).
+- **Setup:** Sat 7 Nov 19:00-21:00 UTC (20:00-22:00 CET). Desk sends. Mini counts. One rate, 1.2 hop/s per family. Steps of 15 minutes at 1, then 2, then 4, then 8 families if 4 is clean, then a 10-minute ramp. Sends finish at 20:30 UTC. The count stays up until 21:00 UTC. One 32-family load follows, 21:15-22:00 UTC.
+- **Reported:** the Saturday window is not run. Before it: 5 Nov holds cleared 1.14 at 4 and at 8 families; two 32-family loads (5 Nov 33.86/s total, slowest 1.037; night of 6 Nov 34.55/s total, slowest 1.047) stayed under 1.14 per family; two Friday passes of the Saturday shape were clean, slowest eight-family rate about 1.26/s. Those pre-tests are not the Saturday count.
+- **Why:** the next shape after 29 Oct. One sender, on from the first second, eight families. The 32-family load is a third look at a band already measured twice, read next to the quiet ladder. [WHY.md](https://github.com/STP-KAS/tn10-storm-2026-11-07/blob/main/WHY.md).
+- **Source:** [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07). The rehearsal that set the rate is in [tn10-storm/desk-saturday](https://github.com/STP-KAS/tn10-storm/tree/main/desk-saturday). Page: [history/storms/2026-11-07.md](storms/2026-11-07.md).

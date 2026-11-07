@@ -41,9 +41,7 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 
 **Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
 
-**8 Nov, the test:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). Desk paste [GO-DESK.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO-DESK.md). Mini paste [GO-MINI.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO-MINI.md). Same story. Start 00:40 UTC. Desk sends, Mini counts, bot watches. The failed shape, then the 32-family load, then sixteen families at 04:15 UTC. The official count waits for a date Pulse picks. [LESSONS](docs/LESSONS.md).
-
-**Sixteen families:** the question stays in [tn10-storm-plan-family-curve](https://github.com/STP-KAS/tn10-storm-plan-family-curve), index row 43. Turn **43a** of this test is inside those two pastes. Do not paste the curve sheets for it. Turn **43b** has no date. We do not claim the result. The mint-rush plan above is a different question and stays its own map.
+**8 Nov, the rehearsal:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). It stands on its own. Desk paste [GO-DESK.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO-DESK.md). Mini paste [GO-MINI.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO-MINI.md). Same story. Start 00:40 UTC. Desk sends, Mini counts, bot watches. The failed shape, then the 32-family load, then sixteen families at 04:15 UTC. The sixteen-family page is in that repo. When both have reported and Pulse names a date, the counted storm is a new repo. [LESSONS](docs/LESSONS.md). The mint-rush plan above is a different question and stays its own map.
 
 ## Map
 
@@ -70,7 +68,7 @@ tn-master/
 | [history/TIMELINE.md](history/TIMELINE.md) | One line per day |
 | [history/storms/](history/storms/README.md) | One page per storm |
 | [credits/KASPA-PULSE.md](credits/KASPA-PULSE.md) | Kaspa Pulse: every input and what we changed |
-| [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility (incl. the [mint-rush plan](https://github.com/STP-KAS/tn10-storm-plan-mint-rush) and the [family-curve plan](https://github.com/STP-KAS/tn10-storm-plan-family-curve)) |
+| [repos/INDEX.md](repos/INDEX.md) | Every storm repo: name, old name, date, class, visibility (incl. the [mint-rush plan](https://github.com/STP-KAS/tn10-storm-plan-mint-rush)) |
 | [repos/RENAME-LOG.md](repos/RENAME-LOG.md) | The 11 Oct 2026 renames |
 | [docs/LESSONS.md](docs/LESSONS.md) · [docs/OPEN-QUESTIONS.md](docs/OPEN-QUESTIONS.md) | Operations lessons; what still needs testing |
 | [tn10-lowio-1148-notes](https://github.com/STP-KAS/tn10-lowio-1148-notes) | Notes on rusty-kaspa PR #1148 (lowio preset): diff read, risks, A/B test (FINDINGS 18) |

@@ -44,6 +44,7 @@ Numbers from different eras are not directly comparable.
 | 29 Oct | Covenant families, 1 then 2 then 4 | Mini coordinates, desk and box send | total hops/s 0.81 / 1.96 / 3.24 | hops/s | handoff copy failed; box lanes partial |
 | 7 Nov (failed) | Covenant families, 1 then 2 then 4 then 8 | Desk sends, mini counts, 1.2 hop/s per family | window did not run | the arm refused; the mini waited for a spoken word | [11-08 record](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
 | 8 Nov rehearsal | Covenant families, 1 then 2 then 4 then 8, then 32, then 16 | Desk sends and counts. Mini counts. One process | 32-family mean 2,922.8 under the 3,078 line; sixteen mean 1,111.8, every family above 1,026 | publishes were not in the runners during the night | [11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
+| 10 Nov (named) | Saturday shape: 1, 2, 4, 8, ramp, then one 32-family load | Desk sends and counts. Mini counts | none yet | revision open; a read does not start a runner | [11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10) |
 
 ## Mid September: first contact
 
@@ -180,4 +181,11 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **Reported, desk hop log:** the night closed 04:50:03 UTC. Every desk phase ended on its window. No family drop and no abort. Load: 93,529 accepted hops, mean 2,922.8 per family over 2,700 seconds, under the 3,078 line, not stopped. Sixteen: 17,788 accepted hops, mean 1,111.8 per family over 900 seconds, every family above 1,026. Label A for that log. Label C as the network's number. Pulse has not counted it.
 - **What the runners did not publish during the night:** Mini's paste said not to commit. The three Mini files were copied afterwards, commit 6e5f086 at 2026-11-08T07:27:53Z. The desk scores were written into the method log. The desk runner did not publish `counts/desk/`. The hash origin times were read from git afterwards: eight 2026-11-08T00:07:21Z commit 430e905, thirty-two 2026-11-08T02:30:02Z commit 180529c, sixteen 2026-11-08T04:00:04Z commit abb8ac5.
 - **Next:** [tn10-storm-2026-11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm). Same shape, new clock, T0 10:40 UTC on 8 Nov 2026. Both publishers inside the runner. Not a restart of this rehearsal. Not the counted storm.
+- **Counted storm Pulse named:** [tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10). Tue 10 Nov 2026, 19:00 UTC. Saturday's shape. Revision open. Not armed. Page: [history/storms/2026-11-10.md](storms/2026-11-10.md).
 - **Source:** [logs/METHOD.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/logs/METHOD.md). Page: [history/storms/2026-11-08.md](storms/2026-11-08.md).
+
+## 10 Nov: named ([tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10))
+
+- **Setup:** Tue 10 Nov 2026, T0 19:00 UTC (20:00 CET). Saturday's shape. Desk sends and counts. Mini counts. Steps of 15 minutes at 1, 2, 4, then 8 if 4 held the line, then a 10-minute ramp. Sends finish 20:30 UTC. The count stays up until 21:00 UTC. One 32-family load, 21:15–22:00 UTC, count off 22:15 UTC. Eight hashes before 18:40 UTC. Thirty-two hashes before 21:10 UTC. File 1 is Wednesday 11 Nov, 12:00 CET. File 2 is Thursday 12 Nov, 18:00 UTC.
+- **Reported:** none. The sends have not started. The writing is in front of Kaspa Pulse for a revision. A read does not start a runner while that sentence is in the file. Wednesday stays the spare. Sixteen families stay off this clock. The 8 Nov 10:40 confirmation is a different clock.
+- **Source:** [tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10). Page: [history/storms/2026-11-10.md](storms/2026-11-10.md).

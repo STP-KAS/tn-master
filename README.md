@@ -2,7 +2,7 @@
 
 # tn-master: every TN10 storm, one map
 
-TN10 storms are load tests we ran on Kaspa's Testnet-10 from 18 Sep to 29 Oct 2026, plus a planned storm on 7 Nov 2026: many senders pushing simple transactions at public and private nodes, then counting what the chain actually accepted. This repo holds no raw data. It links into each storm repo.
+TN10 storms are load tests we ran on Kaspa's Testnet-10 from 18 Sep 2026 on: many senders pushing simple transactions at public and private nodes, then covenant families, then counting what the chain actually accepted. This repo holds no raw data. It links into each storm repo.
 
 > ## Thank you, Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com))
 >
@@ -36,12 +36,15 @@ Best number per storm, with its counter. Counters differ between storms; read [M
 | **11 Oct** (Sun 07:30-12:33 UTC) | **peak complete minute 3,583.1 (11:28Z); mean 2,833.1; median 3,107.1** (07:30-12:33Z); Kaspa Pulse: mean 2,844, median 3,055, best minute 3,646 (11:28Z), 51.2M accepted (07:30-12:30Z) | **Network unique (headline)**; Kaspa Pulse method live as cross-check | [tn10-storm-2026-10-11](https://github.com/STP-KAS/tn10-storm-2026-10-11) |
 | **29 Oct** (Thu 19:00-20:00 UTC) | **total hops/s: 1 family 0.81, 2 families 1.96, 4 families 3.24**; single chain under 1 hop/s (20 Oct baseline ~0.7) | Hops/s, covenant families; Kaspa Pulse independent count | [tn10-storm-2026-10-29](https://github.com/STP-KAS/tn10-storm-2026-10-29) ([review](https://github.com/STP-KAS/tn10-storm-2026-10-29/blob/main/logs/storm-2026-10-29/REVIEW.md)) |
 | **7 Nov** (Sat 19:00-21:00 UTC, failed) | window did not run. No genesis, no sends, no count. Pre-tests still stand and are not that window | Hops/s per covenant family. Desk sends, mini counts | [tn10-storm-2026-11-07](https://github.com/STP-KAS/tn10-storm-2026-11-07). Record: [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
+| **8 Nov rehearsal** (Sun 00:40–04:50 UTC) | 32-family mean 2,922.8 hops/family over 2,700 s, under the 3,078 line; sixteen-family mean 1,111.8 over 900 s, every family above 1,026 | Desk accepted hops. One reading. Not Pulse's count | [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
 
 **11 Oct in one line:** network unique accepted, 07:30-12:33Z (303 minutes, halted early by stp: taking a break, other things on the agenda), about 51.5 million unique transactions; peak complete minute **3,583.1 tx/s** at 11:28Z, mean **2,833.1**, median **3,107.1** over 171 strict single minutes; includes about 56 tx/s base load. Independent counts by Kaspa Pulse ([@gokugalax](https://x.com/gokugalax), [kaspapulse.com](https://kaspapulse.com)): accepted in block counts on two external nodes, best minute 3,646, 51.2M accepted (07:30-12:30Z). Build's results: pending. Source: [logs/bot/SUMMARY.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/bot/SUMMARY.md), [logs/COMBINED.md](https://github.com/STP-KAS/tn10-storm-2026-10-11/blob/main/logs/COMBINED.md).
 
-**Next test, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot).
+**Next family test, plan only (no date yet):** [tn10-storm-plan-confirm](https://github.com/STP-KAS/tn10-storm-plan-confirm). Same clock as the 8 Nov rehearsal, so the desk and Mini each publish their own counts, and each hash file shows the time it reached GitHub. Pulse chooses the day. A runner does not start while the pastes say DATE. Desk paste [GO-DESK.md](https://github.com/STP-KAS/tn10-storm-plan-confirm/blob/main/GO-DESK.md). Mini paste [GO-MINI.md](https://github.com/STP-KAS/tn10-storm-plan-confirm/blob/main/GO-MINI.md).
 
-**8 Nov, the rehearsal:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). It stands on its own. Desk paste [GO-DESK.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO-DESK.md). Mini paste [GO-MINI.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/GO-MINI.md). Same story. Start 00:40 UTC. Desk sends, Mini counts, bot watches. The failed shape, then the 32-family load, then sixteen families at 04:15 UTC. The sixteen-family page is in that repo. When both have reported and Pulse names a date, the counted storm is a new repo. [LESSONS](docs/LESSONS.md). The mint-rush plan above is a different question and stays its own map.
+**Mint rush, plan only (no date yet):** [tn10-storm-plan-mint-rush](https://github.com/STP-KAS/tn10-storm-plan-mint-rush): a KCC-20 mint rush under storm load, capped auto-fee vs fixed-fee minters. Hypothesis: stp's; test idea: TN10 ops (the bot). It stays its own map.
+
+**8 Nov, the rehearsal:** [tn10-storm-2026-11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08). It stands on its own. The desk night closed at 04:50 UTC. The scores are one desk reading. Mini's three count files are in that repo. [LESSONS](docs/LESSONS.md).
 
 ## Map
 

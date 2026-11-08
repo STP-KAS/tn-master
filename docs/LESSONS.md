@@ -22,7 +22,7 @@ We automate as much as possible.
 
 **Standing rule.** Who publishes, how a hash file is proved, and one runner per machine: [RULES.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/RULES.md) for the closed rehearsal, and [RULES.md](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm/blob/main/RULES.md) for the confirmation. A chat note does not replace that page.
 
-**Confirmation, Sun 8 Nov 2026, 10:40 UTC.** [tn10-storm-2026-11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm). Same shape as the 8 Nov rehearsal, on a new clock, so both publishers fire. It is not a restart of the 00:40 rehearsal. 43b and the other drafts stay off that clock.
+**Confirmation, Sun 8 Nov 2026, 12:00 UTC.** The 10:40 waiter was stopped before the hash because the desk had no line on the repo to see that Mini was armed. Mini's first push is `logs/MINI-ARMED.md`. A quiet chat does not stop the desk when that line is on origin. [tn10-storm-2026-11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm). Same shape as the 8 Nov rehearsal, on a new clock, so both publishers fire. It is not a restart of the 00:40 rehearsal. 43b and the other drafts stay off that clock.
 
 **Tue 10 Nov 2026, named.** Pulse named the official count for Tuesday, Saturday's shape and times. [tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10). The revision sentence stays in the files until he confirms it. A read does not start a runner while that sentence is there. The 18:20 UTC paste is ours, so the eight-hash proof can finish before his 18:40 deadline. He has not confirmed that paste time. Wednesday stays the spare. Sixteen families stay off this clock.
 

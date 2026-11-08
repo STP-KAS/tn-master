@@ -14,6 +14,8 @@ We automate as much as possible.
 
 **Benchmark, from this rehearsal.** The next storm copies [tn10-storm-2026-11-08 BENCHMARK.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/BENCHMARK.md). Two root pastes, each the whole story, first sentence names the machine. One runner process per machine. Git by its full path. A schedule may share a clock only when a SKIP file turns one row off before that clock opens. The steps, the offer, and the abort line are the measurement. A later storm does not retune them.
 
+**Mini publishes his own counts.** The 8 Nov paste told Mini not to commit the count files, so they stayed on Mini. From then on the Mini runner writes `counts/mini/FIRST.md`, `counts/mini/LOAD.md`, and `counts/mini/SIXTEEN.md`, and that same runner pushes each file at its count-off. Git is called by the full path resolved when the runner starts. The desk does not write that folder. The chat does not publish it.
+
 **Method log.** What this rehearsal did, which faults were already fixed, and what each phase proved, is [logs/METHOD.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/logs/METHOD.md). A later month starts from that page. A missed night keeps its clock. The next attempt is a later rehearsal, not a new clock on the same night.
 
 - **Disk.** Pruning bursts take up to about 16 GB in 30 min; a 126 GB box disk cannot hold an 86 GB node plus 14-18 GB dips. Keep guards (senders pause at 8 GB, node stop at 5 GB) and never delete the storm SDK in cleanup. ([MASTER](../history/MASTER.md))

@@ -20,7 +20,9 @@ We automate as much as possible.
 
 **A hash file shows when it reached GitHub.** Fixed is the local write. On origin is the commit time of the commit that put the rows on GitHub. The 8 Nov rows: eight at 2026-11-08T00:07:21Z, commit 430e905; thirty-two at 2026-11-08T02:30:02Z, commit 180529c; sixteen at 2026-11-08T04:00:04Z, commit abb8ac5. A later runner writes that time into the file after the push, from origin. A file with rows and no On origin line is not proof the push happened.
 
-**Next family run, no date yet.** [tn10-storm-plan-confirm](https://github.com/STP-KAS/tn10-storm-plan-confirm). Same clock as the 8 Nov rehearsal, so both publishers fire. The pastes say DATE. A runner does not start while they say DATE. When Pulse names the day, the repo is renamed to `tn10-storm-YYYY-MM-DD` and both pastes get that day. 43b and the other drafts stay off that clock.
+**Standing rule.** Who publishes, how a hash file is proved, and one runner per machine: [RULES.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/RULES.md) for the closed rehearsal, and [RULES.md](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm/blob/main/RULES.md) for the confirmation. A chat note does not replace that page.
+
+**Confirmation, Sun 8 Nov 2026, 10:40 UTC.** [tn10-storm-2026-11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm). Same shape as the 8 Nov rehearsal, on a new clock, so both publishers fire. It is not a restart of the 00:40 rehearsal. 43b and the other drafts stay off that clock. The counted storm is still a later repo, when Pulse names that day.
 
 **Method log.** What this rehearsal did, which faults were already fixed, and what each phase proved, is [logs/METHOD.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/logs/METHOD.md). A later month starts from that page. A missed night keeps its clock. The next attempt is a later rehearsal, not a new clock on the same night.
 

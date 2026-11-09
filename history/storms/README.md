@@ -19,5 +19,6 @@
 | [2026-10-11](2026-10-11.md) | Flat-out run, one clock |
 | [2026-10-29](2026-10-29.md) | Covenant families in parallel (1, 2, 4) |
 | [2026-11-07](2026-11-07.md) | Covenant families, 1 then 2 then 4 then 8. Window failed. It did not run. |
-| [2026-11-08](2026-11-08.md) | Rehearsal, stands alone, 00:40 UTC, through sixteen families. Desk night closed. |
-| [2026-11-10](2026-11-10.md) | Named, not run. Tuesday 19:00 UTC. Saturday shape. Revision open. |
+| [2026-11-08](2026-11-08.md) | Rehearsal, 00:40 UTC, through sixteen families. Confirmation, 12:00 UTC, finished 16:10 UTC. |
+| [2026-11-10](2026-11-10.md) | Named, not run. Tuesday 19:00 UTC. Saturday shape. The operator arms that day. |
+| [2026-11-11](2026-11-11.md) | Plan, not armed. Sixteen families under a payment climb. Review first. |

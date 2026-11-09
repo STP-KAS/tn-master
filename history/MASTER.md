@@ -1,6 +1,6 @@
 > **Experimental. We are just trying this.** [Disclaimer](../DISCLAIMER.md)
 
-# MASTER: every TN10 storm, mid Sep 2026 to the planned 7 Nov storm
+# MASTER: every TN10 storm, mid Sep 2026 on
 
 > Moved here from [tn10-storm-2026-10-10/history/MASTER.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/blob/main/history/MASTER.md) on 11 Oct 2026; storm repos were renamed the same day to `tn10-storm-YYYY-MM-DD` ([RENAME-LOG](../repos/RENAME-LOG.md)). [tn-master](../README.md)
 
@@ -44,7 +44,9 @@ Numbers from different eras are not directly comparable.
 | 29 Oct | Covenant families, 1 then 2 then 4 | Mini coordinates, desk and box send | total hops/s 0.81 / 1.96 / 3.24 | hops/s | handoff copy failed; box lanes partial |
 | 7 Nov (failed) | Covenant families, 1 then 2 then 4 then 8 | Desk sends, mini counts, 1.2 hop/s per family | window did not run | the arm refused; the mini waited for a spoken word | [11-08 record](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
 | 8 Nov rehearsal | Covenant families, 1 then 2 then 4 then 8, then 32, then 16 | Desk sends and counts. Mini counts. One process | 32-family mean 2,922.8 under the 3,078 line; sixteen mean 1,111.8, every family above 1,026 | publishes were not in the runners during the night | [11-08](https://github.com/STP-KAS/tn10-storm-2026-11-08) |
-| 10 Nov (named) | Saturday shape: 1, 2, 4, 8, ramp, then one 32-family load | Desk sends and counts. Mini counts | none yet | revision open; a read does not start a runner | [11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10) |
+| 8 Nov confirmation | Same shape, T0 12:00 UTC | Desk sends and counts. Mini counts. Both publish | load mean 3,006.8 under 3,078; sixteen mean 1,111.1, every family above 1,026 | both publishers fired. Not Pulse's count | [11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm) |
+| 10 Nov (named) | Saturday shape: 1, 2, 4, 8, ramp, then one 32-family load | Desk sends and counts. Mini counts | none yet | not armed. Wednesday is not a spare rerun | [11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10) |
+| 11 Nov (plan) | Sixteen families under 1,013 / 2,027 / 3,040 / 4,053 tx/s | Desk sends and counts. Mini counts. Bot sends payments above 2,027 | none yet | review open. Pastes refuse until REVIEW_CLOSED | [11-11](https://github.com/STP-KAS/tn10-storm-2026-11-11) |
 
 ## Mid September: first contact
 
@@ -180,12 +182,18 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **Setup:** Sun 8 Nov 2026, T0 00:40 UTC. One desk sender. Steps of 15 minutes at 1, 2, 4, then 8 if 4 held the line, then a 10-minute ramp, then a 32-family load at 02:55, then sixteen families at 04:15 if the earlier part finished clean. Offer 1.2 hop/s per family. Mini counts and does not send.
 - **Reported, desk hop log:** the night closed 04:50:03 UTC. Every desk phase ended on its window. No family drop and no abort. Load: 93,529 accepted hops, mean 2,922.8 per family over 2,700 seconds, under the 3,078 line, not stopped. Sixteen: 17,788 accepted hops, mean 1,111.8 per family over 900 seconds, every family above 1,026. Label A for that log. Label C as the network's number. Pulse has not counted it.
 - **What the runners did not publish during the night:** Mini's paste said not to commit. The three Mini files were copied afterwards, commit 6e5f086 at 2026-11-08T07:27:53Z. The desk scores were written into the method log. The desk runner did not publish `counts/desk/`. The hash origin times were read from git afterwards: eight 2026-11-08T00:07:21Z commit 430e905, thirty-two 2026-11-08T02:30:02Z commit 180529c, sixteen 2026-11-08T04:00:04Z commit abb8ac5.
-- **Next:** [tn10-storm-2026-11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm). Same shape, new clock, T0 12:00 UTC on 8 Nov 2026. The 10:40 waiter was stopped before the hash. Both publishers inside the runner. Not a restart of this rehearsal. Not the counted storm.
+- **Confirmation, same calendar day, finished:** [tn10-storm-2026-11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm). T0 12:00 UTC. `NIGHT_DONE` 16:10:08 UTC. Desk load, rows before 15:00: 32 families, min 2,918, max 3,197, mean 3,006.8 over 2,700 seconds, under the 3,078 line, not stopped. Sixteen, rows before 15:50: min 1,080, max 1,172, mean 1,111.1 over 900 seconds, every family above 1,026. FIRST 20,156 accepted hops. LOAD 96,217. SIXTEEN 17,777. Both publishers fired. Mini's three files are a separate reading and are not averaged. [logs/METHOD.md](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm/blob/main/logs/METHOD.md). Not a restart of this rehearsal. Not the counted storm.
 - **Counted storm Pulse named:** [tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10). Tue 10 Nov 2026, 19:00 UTC. Saturday's shape. Revision open. Not armed. Page: [history/storms/2026-11-10.md](storms/2026-11-10.md).
 - **Source:** [logs/METHOD.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/logs/METHOD.md). Page: [history/storms/2026-11-08.md](storms/2026-11-08.md).
 
 ## 10 Nov: named ([tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10))
 
 - **Setup:** Tue 10 Nov 2026, T0 19:00 UTC (20:00 CET). Saturday's shape. Desk sends and counts. Mini counts. Steps of 15 minutes at 1, 2, 4, then 8 if 4 held the line, then a 10-minute ramp. Sends finish 20:30 UTC. The count stays up until 21:00 UTC. One 32-family load, 21:15–22:00 UTC, count off 22:15 UTC. Eight hashes before 18:40 UTC. Thirty-two hashes before 21:10 UTC. File 1 is Wednesday 11 Nov, 12:00 CET. File 2 is Thursday 12 Nov, 18:00 UTC.
-- **Reported:** none. The sends have not started. The writing is in front of Kaspa Pulse for a revision. A read does not start a runner while that sentence is in the file. Wednesday stays the spare. Sixteen families stay off this clock. The 8 Nov 10:40 confirmation is a different clock.
+- **Reported:** none. The sends have not started. The operator sends the pastes on Tuesday. A read before that day does not start a runner. File 1 is due Wed 11 Nov at 12:00 CET. File 2 is due Thu 12 Nov at 18:00 UTC. Wednesday is not a spare rerun. Sixteen families stay off this clock. The 8 Nov confirmation is a different clock, and it has finished.
 - **Source:** [tn10-storm-2026-11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10). Page: [history/storms/2026-11-10.md](storms/2026-11-10.md).
+
+## 11 Nov: plan, not armed ([tn10-storm-2026-11-11](https://github.com/STP-KAS/tn10-storm-2026-11-11))
+
+- **Setup:** Wed 11 Nov 2026, T0 12:00 UTC (13:00 CET). Sixteen covenant families, all on, offer 1.2 hop/s, from T0 through a two-hour recovery. Payment offers 1,013, then 2,027, then 3,040, then 4,053 tx/s. Thirty minutes after a step is stable. Then the offer steps back to 1,013 and the families continue for two hours. Families 1–13 pay 100 sompi/gram. Families 14–16 pay 200. Payments pay 150. The desk sends the families and the payments up to 2,027 tx/s, and counts. Mini counts. The bot sends only the payment share above 2,027. Pastes at 11:20 UTC, after `REVIEW_CLOSED`, and only if Tuesday's runner is down.
+- **Reported:** none. Review rounds have not started. The pastes refuse until [prompts/REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-11-11/blob/main/prompts/REVIEW.md) contains `REVIEW_CLOSED`.
+- **Source:** [tn10-storm-2026-11-11](https://github.com/STP-KAS/tn10-storm-2026-11-11). Page: [history/storms/2026-11-11.md](storms/2026-11-11.md). The rule that put this row here the day the repo was written: [docs/NEURON.md](../docs/NEURON.md).

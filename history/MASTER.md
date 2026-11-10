@@ -47,6 +47,7 @@ Numbers from different eras are not directly comparable.
 | 8 Nov confirmation | Same shape, T0 12:00 UTC | Desk sends and counts. Mini counts. Both publish | load mean 3,006.8 under 3,078; sixteen mean 1,111.1, every family above 1,026 | both publishers fired. Not Pulse's count | [11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm) |
 | 10 Nov (named) | Saturday shape: 1, 2, 4, 8, ramp, then one 32-family load | Desk sends and counts. Mini counts | none yet | not armed. Wednesday is not a spare rerun | [11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10) |
 | 11 Nov (plan) | Sixteen families under 1,013 / 2,027 / 3,040, one minute at 4,053, then 1,013 | Desk sends. Mini counts. Bot sends payments only in the 4,053 minute | none yet | review open. Pastes refuse until REVIEW_CLOSED | [11-11](https://github.com/STP-KAS/tn10-storm-2026-11-11) |
+| 11 Nov pre-run 1 | Same targets, no T0 | Desk sends. Mini counts. Bot on the observation minute only | none yet | holds until Tue 22:15 UTC. Does not arm Wednesday | [11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun) |
 
 ## Mid September: first contact
 
@@ -197,3 +198,9 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 - **Setup:** Wed 11 Nov 2026, T0 12:00 UTC (13:00 CET). Sixteen covenant families, all on, offer 1.2 hop/s, until RETURN is met. Payment offers 1,013, then 2,027, then 3,040, then one observation minute at 4,053, then 1,013 again. A scored step closes on three clean minutes of submit-OK, or as `NOT MET` after one repair pass. There is no latest minute after the start. Families 1–13 pay 100 sompi/gram. Families 14–16 pay 200. Payments pay 150. The desk sends the families and every payment offer. Mini counts. The bot sends payments only in the 4,053 minute. Pastes at 11:20 UTC, after `REVIEW_CLOSED`, and only if Tuesday's runner is down.
 - **Reported:** none. Review rounds are open. The pastes refuse until [prompts/REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-11-11/blob/main/prompts/REVIEW.md) contains `REVIEW_CLOSED`.
 - **Source:** [tn10-storm-2026-11-11](https://github.com/STP-KAS/tn10-storm-2026-11-11). Page: [history/storms/2026-11-11.md](storms/2026-11-11.md). The rule that put this row here the day the repo was written: [docs/NEURON.md](../docs/NEURON.md).
+
+## 11 Nov pre-run 1 ([tn10-storm-2026-11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun))
+
+- **Setup:** Pre-run 1 of the Wednesday neuron. Same offers, no T0, no latest minute. Holds until 2026-11-10T22:15:00Z and while Tuesday's runner is up. Does not stop the desk node. Does not write `REVIEW_CLOSED`. A worked fix is locked for the next pre-run.
+- **Reported:** none. The pastes have not been sent.
+- **Source:** [tn10-storm-2026-11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun). Page: [history/storms/2026-11-11-prerun.md](storms/2026-11-11-prerun.md).

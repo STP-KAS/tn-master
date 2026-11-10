@@ -22,3 +22,4 @@
 | [2026-11-08](2026-11-08.md) | Rehearsal, 00:40 UTC, through sixteen families. Confirmation, 12:00 UTC, finished 16:10 UTC. |
 | [2026-11-10](2026-11-10.md) | Named, not run. Tuesday 19:00 UTC. Saturday shape. The operator arms that day. |
 | [2026-11-11](2026-11-11.md) | Plan, not armed. Sixteen families under a payment climb. Review first. |
+| [2026-11-11-prerun](2026-11-11-prerun.md) | Pre-run 1 of that plan. No T0. Holds until Tuesday 22:15 UTC. |

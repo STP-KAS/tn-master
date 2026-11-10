@@ -30,6 +30,8 @@ We automate as much as possible.
 
 **Wed 11 Nov 2026, not armed.** Sixteen covenant families under payment offers of 1,013, then 2,027, then 3,040, then one observation minute at 4,053, then 1,013 again. A scored step closes on three clean minutes of submit-OK, or as `NOT MET` after one repair pass. The bot sends payments only in that minute. Review rounds first. [prompts/REVIEW.md](https://github.com/STP-KAS/tn10-storm-2026-11-11/blob/main/prompts/REVIEW.md). The pastes refuse to start until that file contains `REVIEW_CLOSED`.
 
+**Pre-run 1 is not that day.** [tn10-storm-2026-11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun) uses the same targets and has no T0. It holds until Tuesday's runner is down and the clock is past 2026-11-10T22:15:00Z. It does not stop the desk node. A fix that works is locked in that repo for the next pre-run. Wednesday's pages stay as they were.
+
 **Method log.** What this rehearsal did, which faults were already fixed, and what each phase proved, is [logs/METHOD.md](https://github.com/STP-KAS/tn10-storm-2026-11-08/blob/main/logs/METHOD.md). A later month starts from that page. A missed night keeps its clock. The next attempt is a later rehearsal, not a new clock on the same night.
 
 - **Disk.** Pruning bursts take up to about 16 GB in 30 min; a 126 GB box disk cannot hold an 86 GB node plus 14-18 GB dips. Keep guards (senders pause at 8 GB, node stop at 5 GB) and never delete the storm SDK in cleanup. ([MASTER](../history/MASTER.md))

@@ -47,7 +47,7 @@ Numbers from different eras are not directly comparable.
 | 8 Nov confirmation | Same shape, T0 12:00 UTC | Desk sends and counts. Mini counts. Both publish | load mean 3,006.8 under 3,078; sixteen mean 1,111.1, every family above 1,026 | both publishers fired. Not Pulse's count | [11-08-confirm](https://github.com/STP-KAS/tn10-storm-2026-11-08-confirm) |
 | 10 Nov (named) | Saturday shape: 1, 2, 4, 8, ramp, then one 32-family load | Desk sends and counts. Mini counts | none yet | not armed. Wednesday is not a spare rerun | [11-10](https://github.com/STP-KAS/tn10-storm-2026-11-10) |
 | 11 Nov (plan) | Sixteen families under 1,013 / 2,027 / 3,040, one minute at 4,053, then 1,013 | Desk sends. Mini counts. Bot sends payments only in the 4,053 minute | none yet | review open. Pastes refuse until REVIEW_CLOSED | [11-11](https://github.com/STP-KAS/tn10-storm-2026-11-11) |
-| 11 Nov pre-run 1 | Same targets, no T0 | Desk sends. Mini counts. Bot on the observation minute only | none yet | holds until Tue 22:15 UTC. Does not arm Wednesday | [11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun) |
+| 11 Nov pre-run 1 | Same targets. Start 23:00 CET | Desk sends. Mini counts. Bot on the observation minute only | none yet | holds before 22:00 UTC, and while Tuesday's runner is up | [11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun) |
 
 ## Mid September: first contact
 
@@ -201,6 +201,6 @@ Details: [2026-10-10-take2.md](https://github.com/STP-KAS/tn10-storm-2026-10-10/
 
 ## 11 Nov pre-run 1 ([tn10-storm-2026-11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun))
 
-- **Setup:** Pre-run 1 of the Wednesday neuron. Same offers, no T0, no latest minute. Holds until 2026-11-10T22:15:00Z and while Tuesday's runner is up. Does not stop the desk node. Does not write `REVIEW_CLOSED`. A worked fix is locked for the next pre-run.
+- **Setup:** Pre-run 1 of the Wednesday neuron. Same offers. Start 23:00 CET (22:00 UTC) on 10 Nov 2026. Holds before that hour, and while Tuesday's runner is up. Does not stop the desk node. Does not write `REVIEW_CLOSED`. The operator arms the three machines. A worked fix is locked for the next pre-run.
 - **Reported:** none. The pastes have not been sent.
 - **Source:** [tn10-storm-2026-11-11-prerun](https://github.com/STP-KAS/tn10-storm-2026-11-11-prerun). Page: [history/storms/2026-11-11-prerun.md](storms/2026-11-11-prerun.md).

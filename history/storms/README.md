@@ -22,4 +22,4 @@
 | [2026-11-08](2026-11-08.md) | Rehearsal, 00:40 UTC, through sixteen families. Confirmation, 12:00 UTC, finished 16:10 UTC. |
 | [2026-11-10](2026-11-10.md) | Named, not run. Tuesday 19:00 UTC. Saturday shape. The operator arms that day. |
 | [2026-11-11](2026-11-11.md) | Plan, not armed. Sixteen families under a payment climb. Review first. |
-| [2026-11-11-prerun](2026-11-11-prerun.md) | Pre-runs 1–9 of the Wednesday plan, 11–12 Nov. Pre-run 1 failed before hashes; 7–9 met scored submit-OK. Pre-run 10 is a placeholder. |
+| [2026-11-11-prerun](2026-11-11-prerun.md) | Pre-runs 1–10 of the Wednesday plan, 11–12 Nov. Pre-run 1 failed before hashes; 7–10 met scored submit-OK. In pre-run 10, cheap chained tiers were already slow at 1,013. |

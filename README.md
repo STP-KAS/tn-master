@@ -1,4 +1,6 @@
 > **Experimental. We are just trying this.** [Disclaimer](DISCLAIMER.md) · Kaspa Testnet-10 only; tKAS has no value.
+>
+> For developers and contributors: a short, humble list of [what we observed](OBSERVED-FOR-DEVELOPERS.md) in pre-runs 9–20. Observations only; our methods may be wrong, and corrections are welcome.
 
 # tn-master: every TN10 storm, one map
 
